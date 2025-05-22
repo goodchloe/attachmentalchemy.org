@@ -3,9 +3,15 @@ import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { CheckCircle, Users, Leaf, Mic, BookOpen } from 'lucide-react';
-
-const FeatureCard: React.FC<{ icon: React.ElementType, title: string, children: React.ReactNode }> = ({ icon: Icon, title, children }) => (
-  <Card className="h-full">
+const FeatureCard: React.FC<{
+  icon: React.ElementType;
+  title: string;
+  children: React.ReactNode;
+}> = ({
+  icon: Icon,
+  title,
+  children
+}) => <Card className="h-full">
     <CardHeader className="flex flex-row items-center space-x-3 pb-2">
       <Icon className="h-8 w-8 text-primary" />
       <CardTitle className="text-xl">{title}</CardTitle>
@@ -13,33 +19,21 @@ const FeatureCard: React.FC<{ icon: React.ElementType, title: string, children: 
     <CardContent className="text-muted-foreground">
       {children}
     </CardContent>
-  </Card>
-);
-
+  </Card>;
 const AttachmentAlchemyPage: React.FC = () => {
-  return (
-    <>
+  return <>
       <SectionWrapper className="bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Attachment Alchemy</h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-            Your 4-Month Journey to Embodied Secure Attachment and Thriving Community.
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+        </h1>
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">Your 4-Month Journey to Embodied Secure Attachment and Thriving Community.</p>
         </div>
-         <img 
-            src="/lovable-uploads/f2df2a74-c830-48c4-98ed-231ca12cc3a2.png"
-            alt="Attachment Alchemy program banner with forest background and facilitators Chloe and Spencer"
-            className="w-full max-w-4xl mx-auto h-auto rounded-lg shadow-xl mb-12 object-cover"
-        />
+         <img src="/lovable-uploads/f2df2a74-c830-48c4-98ed-231ca12cc3a2.png" alt="Attachment Alchemy program banner with forest background and facilitators Chloe and Spencer" className="w-full max-w-4xl mx-auto h-auto rounded-lg shadow-xl mb-12 object-cover" />
       </SectionWrapper>
 
       <SectionWrapper>
         <div className="relative rounded-lg shadow-lg overflow-hidden mb-12">
-          <img
-            src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
-            alt="Forest path bathed in sunlight"
-            className="absolute inset-0 w-full h-full object-cover z-0"
-          />
+          <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Forest path bathed in sunlight" className="absolute inset-0 w-full h-full object-cover z-0" />
           <div className="absolute inset-0 bg-black/50 z-10"></div> {/* Overlay for readability */}
           <Card className="relative z-20 bg-transparent border-none shadow-none text-card-foreground">
             <CardHeader>
@@ -63,21 +57,30 @@ const AttachmentAlchemyPage: React.FC = () => {
       <SectionWrapper className="bg-secondary/30 rounded-lg">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">The Transformation You Can Expect</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            { title: "Feel Safe in Your Body", description: "Cultivate a profound sense of safety and trust within yourself, your primary home." },
-            { title: "Nourished & Connected", description: "Build authentic, nourishing relationships with yourself and others, rooted in secure attachment." },
-            { title: "Embodied Resilience", description: "Develop the capacity to navigate life's ups and downs with grace and inner strength." },
-            { title: "Live an Alive & Full Life", description: "Unlock your vitality, joy, and authentic expression." },
-            { title: "Thriving Community", description: "Become part of a supportive community dedicated to growth and connection." },
-            { title: "Inner Wise Parent", description: "Develop a compassionate inner guide to support your journey." },
-          ].map(item => (
-            <Card key={item.title} className="text-center">
+          {[{
+          title: "Feel Safe in Your Body",
+          description: "Cultivate a profound sense of safety and trust within yourself, your primary home."
+        }, {
+          title: "Nourished & Connected",
+          description: "Build authentic, nourishing relationships with yourself and others, rooted in secure attachment."
+        }, {
+          title: "Embodied Resilience",
+          description: "Develop the capacity to navigate life's ups and downs with grace and inner strength."
+        }, {
+          title: "Live an Alive & Full Life",
+          description: "Unlock your vitality, joy, and authentic expression."
+        }, {
+          title: "Thriving Community",
+          description: "Become part of a supportive community dedicated to growth and connection."
+        }, {
+          title: "Inner Wise Parent",
+          description: "Develop a compassionate inner guide to support your journey."
+        }].map(item => <Card key={item.title} className="text-center">
               <CardHeader>
                 <CardTitle className="text-2xl text-primary">{item.title}</CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground">{item.description}</CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
       </SectionWrapper>
 
@@ -165,19 +168,17 @@ const AttachmentAlchemyPage: React.FC = () => {
         <div className="max-w-3xl mx-auto space-y-4">
           <p className="text-lg text-muted-foreground text-center">FAQ content will be added here soon.</p>
           {/* Example FAQ Item structure (can use Accordion component from shadcn/ui)
-          <Accordion type="single" collapsible className="w-full">
+           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger>Is this program right for me?</AccordionTrigger>
               <AccordionContent>
                 Details about who this program is best suited for...
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
-          */}
+           </Accordion>
+           */}
         </div>
       </SectionWrapper>
-    </>
-  );
+    </>;
 };
-
 export default AttachmentAlchemyPage;
