@@ -26,7 +26,7 @@ const AttachmentAlchemyPage: React.FC = () => {
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
         </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">Your 4-Month Journey to Embodied Secure Attachment and Thriving Community.</p>
+          
         </div>
          <img src="/lovable-uploads/f2df2a74-c830-48c4-98ed-231ca12cc3a2.png" alt="Attachment Alchemy program banner with forest background and facilitators Chloe and Spencer" className="w-full max-w-4xl mx-auto h-auto rounded-lg shadow-xl mb-12 object-cover" />
       </SectionWrapper>
@@ -46,7 +46,7 @@ const AttachmentAlchemyPage: React.FC = () => {
                 <li>Struggling to navigate life's challenges with resilience?</li>
                 <li>Yearning to live an "alive and full embodied" life?</li>
                 <li>Seeking a "securely attached embodied community"?</li>
-                <li>Wanting people who see your "goodness and your greatness"?</li>
+                <li>Wanting people who see your "goodness  and your greatness"?</li>
                 <li>Tired of surface-level fixes and ready for deep transformation?</li>
               </ul>
             </CardContent>
@@ -55,7 +55,7 @@ const AttachmentAlchemyPage: React.FC = () => {
       </SectionWrapper>
       
       <SectionWrapper className="bg-secondary/30 rounded-lg">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">The Transformation You Can Expect</h2>
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">The Transformation...</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[{
           title: "Feel Safe in Your Body",
@@ -143,12 +143,11 @@ const AttachmentAlchemyPage: React.FC = () => {
       <SectionWrapper className="bg-primary/10 rounded-lg">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-foreground">Investment</h2>
-          <p className="text-xl text-muted-foreground mb-6">
-            This is a significant investment in your transformation. Full program cost and payment plan options will be detailed during your clarity call.
-          </p>
+          <p className="text-xl text-muted-foreground mb-6">This is a significant investment in your transformation. </p>
           <Card className="p-6 mb-8 bg-card">
-            <CardTitle className="text-2xl text-primary mb-2">Program Cost: [To Be Confirmed]</CardTitle>
-            <CardDescription>Payment plans available.</CardDescription>
+            <CardTitle className="text-primary mb-2 text-lg">Program Cost: 
+Sliding scale $4500 - $7000 </CardTitle>
+            <CardDescription>Payment plans and partial scholarships available. </CardDescription>
           </Card>
           
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-foreground">Ready to Transform Your Life?</h2>
