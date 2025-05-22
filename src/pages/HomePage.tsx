@@ -8,23 +8,24 @@ import { CheckCircle } from 'lucide-react';
 
 // Placeholder image URL - replace with Chloe's actual or preferred stock photo
 const heroImageUrl = "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80";
-
-
 const HomePage: React.FC = () => {
-  return (
-    <>
+  return <>
       {/* Hero Section */}
       <SectionWrapper className="!py-0">
         <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center text-center rounded-lg overflow-hidden">
           <img src={heroImageUrl} alt="Serene natural landscape" className="absolute inset-0 w-full h-full object-cover filter brightness-50" />
           <div className="relative z-10 p-8 max-w-3xl mx-auto text-white">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in" style={{
+            animationDelay: '0.2s'
+          }}>
               Reclaim Your Aliveness: Healing Attachment, Embodying Safety
             </h1>
-            <p className="text-lg md:text-xl mb-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              You can heal. You can feel safe. You can live a full, embodied life. I can help.
-            </p>
-            <div className="space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            <p className="text-lg md:text-xl mb-8 animate-fade-in" style={{
+            animationDelay: '0.4s'
+          }}>You can live a full, embodied life.</p>
+            <div className="space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in" style={{
+            animationDelay: '0.6s'
+          }}>
               <CallToActionButton to="/attachment-alchemy" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 Discover Attachment Alchemy
               </CallToActionButton>
@@ -42,14 +43,8 @@ const HomePage: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-foreground">
             Hi, I'm Chloe. I've Been There.
           </h2>
-          <img 
-            src="/lovable-uploads/9d76db4c-e415-4080-9e67-67cca0b43cd5.png" 
-            alt="Chloe Good, smiling warmly"
-            className="w-48 h-48 rounded-full mx-auto mb-6 object-cover shadow-lg"
-          />
-          <p className="text-lg text-muted-foreground mb-6">
-            My journey through complex trauma and into profound healing has equipped me with unique insights and a deep passion for guiding others towards their own "embodied secure attachment." I know what it's like to search for safety and aliveness, and I'm here to walk that path with you.
-          </p>
+          <img src="/lovable-uploads/9d76db4c-e415-4080-9e67-67cca0b43cd5.png" alt="Chloe Good, smiling warmly" className="w-48 h-48 rounded-full mx-auto mb-6 object-cover shadow-lg" />
+          <p className="text-lg text-muted-foreground mb-6">My journey through complex trauma and into profound healing has equipped me with may tools and a deep passion for guiding others towards their own "embodied secure attachment." I know what it's like to search for safety and aliveness, and I'm here to walk that path with you.</p>
           <CallToActionButton to="/about" variant="link" className="text-primary hover:text-primary/80">
             Learn More About My Journey
           </CallToActionButton>
@@ -61,19 +56,10 @@ const HomePage: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-foreground">Are You Experiencing...?</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left text-lg text-muted-foreground">
-            {[
-              "Struggles in relationships, feeling misunderstood or disconnected?",
-              "A sense of not feeling safe in your own body or with others?",
-              "Feeling disconnected from your emotions or physical sensations?",
-              "A cycle of anxiety, depression, or overwhelm that therapy hasn't fully resolved?",
-              "A longing for genuine community and deeper connections?",
-              "Tired of traditional talk therapy that doesn't seem to create lasting change?"
-            ].map((item, index) => (
-              <li key={index} className="flex items-start space-x-3 p-4 bg-card rounded-md shadow">
+            {["Struggles in relationships, feeling misunderstood or disconnected?", "A sense of not feeling safe in your own body or with others?", "Feeling disconnected from your emotions or physical sensations?", "A cycle of anxiety, depression, or overwhelm that therapy hasn't fully resolved?", "A longing for genuine community and deeper connections?", "Tired of traditional talk therapy that doesn't seem to create lasting change?"].map((item, index) => <li key={index} className="flex items-start space-x-3 p-4 bg-card rounded-md shadow">
                 <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <span>{item}</span>
-              </li>
-            ))}
+              </li>)}
           </ul>
           <p className="mt-8 text-lg text-muted-foreground">If any of this resonates, you're in the right place. Healing is possible.</p>
         </div>
@@ -83,11 +69,8 @@ const HomePage: React.FC = () => {
       <SectionWrapper>
         <Card className="overflow-hidden shadow-xl md:flex">
           <div className="md:w-1/2">
-             <img 
-              src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" // Placeholder nature image
-              alt="Path to healing in nature"
-              className="w-full h-64 md:h-full object-cover"
-            />
+             <img src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" // Placeholder nature image
+          alt="Path to healing in nature" className="w-full h-64 md:h-full object-cover" />
           </div>
           <div className="md:w-1/2">
             <CardHeader>
@@ -138,8 +121,6 @@ const HomePage: React.FC = () => {
           </form>
         </div>
       </SectionWrapper>
-    </>
-  );
+    </>;
 };
-
 export default HomePage;
