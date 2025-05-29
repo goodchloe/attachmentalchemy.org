@@ -1,8 +1,10 @@
+
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { CheckCircle, Users, Leaf, Mic, BookOpen } from 'lucide-react';
+
 const FeatureCard: React.FC<{
   icon: React.ElementType;
   title: string;
@@ -20,164 +22,274 @@ const FeatureCard: React.FC<{
       {children}
     </CardContent>
   </Card>;
+
 const AttachmentAlchemyPage: React.FC = () => {
   return <>
-      <SectionWrapper className="bg-gradient-to-br from-primary/10 via-background to-secondary/10">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-        </h1>
-          
+      {/* Hero Section with trees photo */}
+      <SectionWrapper className="!py-0">
+        <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center text-center rounded-lg overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
+            alt="Forest trees reaching toward the sky" 
+            className="absolute inset-0 w-full h-full object-cover filter brightness-50" 
+          />
+          <div className="relative z-10 p-8 max-w-4xl mx-auto text-white">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
+              Attachment Alchemy: 4 Month Journey to Embodied Secure Attachment
+            </h1>
+          </div>
         </div>
-         <img src="/lovable-uploads/f2df2a74-c830-48c4-98ed-231ca12cc3a2.png" alt="Attachment Alchemy program banner with forest background and facilitators Chloe and Spencer" className="w-full max-w-4xl mx-auto h-auto rounded-lg shadow-xl mb-12 object-cover" />
       </SectionWrapper>
 
-      <SectionWrapper>
-        <div className="relative rounded-lg shadow-lg overflow-hidden mb-12">
-          <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Forest path bathed in sunlight" className="absolute inset-0 w-full h-full object-cover z-0" />
-          <div className="absolute inset-0 bg-black/50 z-10"></div> {/* Overlay for readability */}
-          <Card className="relative z-20 bg-transparent border-none shadow-none text-card-foreground">
-            <CardHeader>
-              <CardTitle className="text-3xl text-center text-white">Is This You?</CardTitle>
-            </CardHeader>
-            <CardContent className="text-lg text-gray-200"> {/* Adjusted text color for better contrast */}
-              <ul className="list-disc list-inside space-y-2 columns-1 md:columns-2">
-                <li>Feeling unsafe in your body or relationships?</li>
-                <li>Longing for nourishment and genuine connection (with self and others)?</li>
-                <li>Struggling to navigate life's challenges with resilience?</li>
-                <li>Yearning to live an "alive and full embodied" life?</li>
-                <li>Seeking a "securely attached embodied community"?</li>
-                <li>Wanting people who see your "goodness  and your greatness"?</li>
-                <li>Tired of surface-level fixes and ready for deep transformation?</li>
-              </ul>
+      {/* Introduction - Color Block Section */}
+      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{ backgroundColor: '#8FB5A3' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <p className="text-lg md:text-xl mb-8">
+              Are you feeling the call to deepen your capacity for intimacy, safety, and authentic connection in 2025?
+            </p>
+            <p className="text-lg md:text-xl mb-8">
+              This is your invitation to a transformative 4-month journey into the heart of secure attachment, embodied healing, and relational aliveness. Through somatic practices, nervous system repair, and a living relational field, you'll rewire old patterns and root into the version of you that's deeply connected, present, and alive.
+            </p>
+            <p className="text-lg md:text-xl font-semibold">
+              This is more than a course—it's a path of transformation and possibility.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What does it mean section - Light grey */}
+      <SectionWrapper className="bg-secondary/30">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">What You'll Discover</h2>
+          <div className="space-y-6 text-lg text-muted-foreground">
+            <p className="text-center mb-8">
+              What does it mean to open your nervous system to love, safety, and purpose—and let life move through you with clarity and power?
+            </p>
+            <div className="grid md:grid-cols-1 gap-6">
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
+                <p>In Attachment Alchemy, you'll learn to relate from a regulated, securely attached self—so your presence naturally inspires trust, depth, and transformation.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
+                <p>Develop the clarity, confidence, and embodied tools to show up authentically in your relationships, your work, and your leadership.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
+                <p>Learn to navigate complex relational dynamics and hold space for deep healing—whether that's with clients, teams, or loved ones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </SectionWrapper>
+
+      {/* Who is this for - Color Block Section */}
+      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{ backgroundColor: '#D4B5A0' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-white">Who is this for?</h2>
+            <div className="grid md:grid-cols-1 gap-6 text-lg text-white">
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="h-6 w-6 text-white flex-shrink-0 mt-1" />
+                <p>You've done a lot of work on yourself but you keep running into the same pattern that you can't seem to overcome.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="h-6 w-6 text-white flex-shrink-0 mt-1" />
+                <p>You're wanting more closeness and intimacy in your relationships and can't quite get there.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="h-6 w-6 text-white flex-shrink-0 mt-1" />
+                <p>You're wanting to go for bigger dreams and feel like you need more support.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="h-6 w-6 text-white flex-shrink-0 mt-1" />
+                <p>You did everything you were 'supposed' to do and still don't feel satisfied.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="h-6 w-6 text-white flex-shrink-0 mt-1" />
+                <p>You're longing to welcome a committed partner into your life while maintaining your authenticity and working through anxious or avoidant patterns that have sabotaged your relationships in the past.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials - Light grey */}
+      <SectionWrapper className="bg-secondary/30">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">What participants are saying...</h2>
+        <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+          <Card className="text-center">
+            <CardContent className="p-8">
+              <p className="text-lg text-muted-foreground mb-4 italic">
+                "This was the most transformative workshop I have ever taken."
+              </p>
+              <p className="font-semibold text-primary">- J.D., Attachment Alchemy Participant</p>
+            </CardContent>
+          </Card>
+          <Card className="text-center">
+            <CardContent className="p-8">
+              <p className="text-lg text-muted-foreground mb-4 italic">
+                "Chloe leads with an incredible combination of skill, deep love and compassion, and so much joy. Just being in her presence and having her as your cheerleader and fierce ally throughout the course will up-level your life!"
+              </p>
+              <p className="font-semibold text-primary">- J.E., Attachment Alchemy Participant</p>
+            </CardContent>
+          </Card>
+          <Card className="text-center">
+            <CardContent className="p-8">
+              <p className="text-lg text-muted-foreground mb-4 italic">
+                "I can honestly say I could have paid 10x what she charges and it still would have been worth it."
+              </p>
+              <p className="font-semibold text-primary">- C.S., CEO Tech Startup</p>
             </CardContent>
           </Card>
         </div>
       </SectionWrapper>
-      
-      <SectionWrapper className="bg-secondary/30 rounded-lg">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">The Transformation...</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[{
-          title: "Feel Safe in Your Body",
-          description: "Cultivate a profound sense of safety and trust within yourself, your primary home."
-        }, {
-          title: "Nourished & Connected",
-          description: "Build authentic, nourishing relationships with yourself and others, rooted in secure attachment."
-        }, {
-          title: "Embodied Resilience",
-          description: "Develop the capacity to navigate life's ups and downs with grace and inner strength."
-        }, {
-          title: "Live an Alive & Full Life",
-          description: "Unlock your vitality, joy, and authentic expression."
-        }, {
-          title: "Thriving Community",
-          description: "Become part of a supportive community dedicated to growth and connection."
-        }, {
-          title: "Inner Wise Parent",
-          description: "Develop a compassionate inner guide to support your journey."
-        }].map(item => <Card key={item.title} className="text-center">
+
+      {/* Inside Attachment Alchemy - Color Block Section */}
+      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{ backgroundColor: '#E07A5F' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-white">Inside Attachment Alchemy</h2>
+          <p className="text-xl text-center mb-10 text-white">4 Months from August 6 - December 3</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="text-center bg-white/90">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">{item.title}</CardTitle>
+                <CardTitle className="text-lg text-primary">Kickoff Immersion</CardTitle>
               </CardHeader>
-              <CardContent className="text-muted-foreground">{item.description}</CardContent>
-            </Card>)}
+              <CardContent>
+                <p className="text-muted-foreground">August 6th - 4-day in-person retreat in Northern California</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center bg-white/90">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">1:1 Coaching Sessions</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Two 90-minute sessions with Chloe</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center bg-white/90">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">Live Group Sessions</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Bi-weekly online sessions with live coaching and practices</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center bg-white/90">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">Peer Practice Partners</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Deepen secure attachment and work through blocks together</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center bg-white/90">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">Recorded Resources</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Meditations and tailored assignments to integrate learnings</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center bg-white/90">
+              <CardHeader>
+                <CardTitle className="text-lg text-primary">Movement & Energy</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">Practices to integrate transformations in your body and nervous system</p>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="text-center mt-8">
+            <Card className="bg-white/90 inline-block">
+              <CardContent className="p-6">
+                <CardTitle className="text-xl text-primary mb-2">Supportive Community</CardTitle>
+                <p className="text-muted-foreground">Deep, loving, supportive, intelligent peers</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
-      </SectionWrapper>
+      </section>
 
-      <SectionWrapper>
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">What is Attachment Alchemy?</h2>
-        <div className="max-w-3xl mx-auto text-lg text-muted-foreground space-y-4 text-center">
-          <p>Attachment Alchemy is more than just a program; it's a <span className="font-semibold text-primary">four-month immersive journey</span> designed to guide you from attachment distress to <span className="font-semibold text-primary">embodied secure attachment</span>. </p>
-          <p>Our vision is for you to feel <span className="font-semibold">safe, nourished, connected, resilient, and vibrantly alive</span>. We believe that healing happens in community, which is why this group program provides a vital space for shared growth, mutual support, and collective transformation.</p>
-        </div>
-      </SectionWrapper>
-
-      <SectionWrapper className="bg-muted/30 rounded-lg">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">How the Program Works</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <FeatureCard icon={Users} title="1-on-1 Coaching with Chloe">
-            Two intensive 1.5-2 hour sessions to dive deep into your personal journey and integrate program material.
-          </FeatureCard>
-          <FeatureCard icon={BookOpen} title="Bi-weekly Classes">
-            Gain skills, self-understanding, and practical tools for healing in relationships and daily life.
-          </FeatureCard>
-          <FeatureCard icon={Mic} title="Peer Counseling Pods">
-            Bi-weekly (alternating with classes), participants become each other's counselors in small, supportive pods.
-          </FeatureCard>
-          <FeatureCard icon={CheckCircle} title="Recorded Meditations">
-            Daily listening, including Ideal Parent Figure meditations, tailored to course parts to develop your "inner wise parent."
-          </FeatureCard>
-          <FeatureCard icon={Leaf} title="4-Day In-Person Nature Retreat">
-            A cornerstone experience for deep connection with nature, self, and the community. (Details TBC)
-          </FeatureCard>
-          <FeatureCard icon={Users} title="Secure Attachment with Nature">
-            Ongoing support and practices to foster a healing relationship with the natural world throughout the course.
-          </FeatureCard>
-        </div>
-      </SectionWrapper>
-
-      <SectionWrapper>
+      {/* Meet Your Facilitators - Light grey */}
+      <SectionWrapper className="bg-secondary/30">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">Meet Your Facilitators</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           <Card className="text-center">
             <CardHeader>
               <img src="/lovable-uploads/9d76db4c-e415-4080-9e67-67cca0b43cd5.png" alt="Chloe Good, program facilitator" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
               <CardTitle className="text-2xl text-primary">Chloe Good</CardTitle>
+              <CardDescription className="text-lg">Somatic Attachment Repair & Executive Coach</CardDescription>
             </CardHeader>
-            <CardContent className="text-muted-foreground">
-              <p>Chloe brings her profound personal healing journey and extensive training in somatic therapies and attachment work to guide you with compassion, wisdom, and authenticity. She is dedicated to helping you find safety within and live a fully embodied life.</p>
+            <CardContent className="text-muted-foreground text-left">
+              <p className="mb-4">
+                Chloe has guided hundreds of visionary women and men to move towards secure attachment and align their lives to their higher purpose for the past 12 years. Chloe taught Leadership for Stanford & Sonoma State University and consults Leaders at companies like eBay, Accenture, Square, Facebook and various San Francisco Bay Area startups aligning leaders to their higher purpose to create the world we all want to live in.
+              </p>
+              <p className="mb-4">
+                Chloe integrates over 20,000 hours of training and experience and 50 trainings, including the Adult Attachment Repair Model (aka stick work), Secure Attachment to Nature, Hakomi Somatic Therapy, mindfulness meditation, Life Purpose Work, Internal Family Systems, Energy Work, Strengths Based Leadership and Integrative Quantum Medicine. She earned her BA from Columbia University in the City of New York.
+              </p>
+              <p>
+                Chloe is a community builder, having co-created over 40 Co-Housing Living Communities in San Francisco and NYC. Chloe also loves to travel and has visited over 30 countries on 5 continents. Chloe is also the founder of Own Your Magic, which combines Chloe's ability to guide women and men to deep transformation, secure attachment and fulfill their higher purpose supported by an amazing network and community.
+              </p>
             </CardContent>
           </Card>
           <Card className="text-center">
             <CardHeader>
-               <img src="https://images.unsplash.com/photo-1615729947596-a598e5de0ab3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Spencer (Partner Facilitator)" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
-              <CardTitle className="text-2xl text-primary">Spencer (Partner Facilitator)</CardTitle>
+              <img src="/lovable-uploads/eb1444c1-90a6-4ce6-8c93-b289c40276fe.png" alt="Spencer Jacobson, Leadership Coach" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+              <CardTitle className="text-2xl text-primary">Spencer Jacobson</CardTitle>
+              <CardDescription className="text-lg">Leadership Coach, Founder Dance Meets Tantra</CardDescription>
             </CardHeader>
-            <CardContent className="text-muted-foreground">
-              <p>Spencer (bio to be provided by Chloe) is a valued partner in Attachment Alchemy, bringing his unique skills and presence to support the group's journey. He is hired by Chloe and contributes significantly to the program experience.</p>
+            <CardContent className="text-muted-foreground text-left">
+              <p className="mb-4">
+                Spencer is a transformational facilitator, DJ, poet and serial entrepreneur with a passion for the art of gathering humans to experience the deepest truths of ourselves individually and collectively. His facilitation style invites self-expression, connection, and creativity while playfully and safely exploring the edges of our comfort zone.
+              </p>
+              <p className="mb-4">
+                He is forever a student of embodiment and healing arts - having studied 5Rhythms dance, tantra, contact improv, ontological coaching, cranialsacral therapy, and yoga. Through his training and deep personal experiences, he is committed to creating safer spaces that hold a trauma-informed perspective.
+              </p>
+              <p className="mb-4">
+                He is co-founder of www.dancemeetstantra.com and www.emergence.love - and previously founded www.guided.co - an organization that has coached thousands of business leaders around the world.
+              </p>
+              <p className="italic">
+                "Your heart knows the way, run in that direction" - Rumi | www.spencerjacobson.com | @spencerjacobson_
+              </p>
             </CardContent>
           </Card>
         </div>
       </SectionWrapper>
       
-      <SectionWrapper className="bg-primary/10 rounded-lg">
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-foreground">Investment</h2>
-          <p className="text-xl text-muted-foreground mb-6">This is a significant investment in your transformation. </p>
-          <Card className="p-6 mb-8 bg-card">
-            <CardTitle className="text-primary mb-2 text-lg">Program Cost: 
-Sliding scale $4500 - $7000 </CardTitle>
-            <CardDescription>Payment plans and partial scholarships available. </CardDescription>
-          </Card>
-          
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-foreground">Ready to Transform Your Life?</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            If Attachment Alchemy resonates with you, the next step is to book a complimentary Clarity Call. This is an opportunity to connect, discuss your needs, and see if this program is the right fit for your journey.
-          </p>
-          <CallToActionButton href="#contact-cta" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Book Your Free Clarity Call
-          </CallToActionButton>
-          <p className="mt-4 text-sm text-muted-foreground">(This will link to Acuity Scheduling or an application form)</p>
+      {/* Investment - Color Block Section */}
+      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{ backgroundColor: '#3F5F5F' }}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">Investment</h2>
+            <p className="text-xl text-white mb-6">This is a significant investment in your transformation.</p>
+            <Card className="p-6 mb-8 bg-white">
+              <CardTitle className="text-primary mb-2 text-lg">Program Cost: 
+  Sliding scale $4500 - $7000</CardTitle>
+              <CardDescription>Payment plans and partial scholarships available.</CardDescription>
+            </Card>
+            
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">Ready to Transform Your Life?</h2>
+            <p className="text-lg text-white mb-8">
+              If Attachment Alchemy resonates with you, the next step is to book a complimentary Clarity Call. This is an opportunity to connect, discuss your needs, and see if this program is the right fit for your journey.
+            </p>
+            <CallToActionButton href="#contact-cta" className="bg-white text-primary hover:bg-gray-100">
+              Book Your Free Clarity Call
+            </CallToActionButton>
+            <p className="mt-4 text-sm text-white">(This will link to Acuity Scheduling or an application form)</p>
+          </div>
         </div>
-      </SectionWrapper>
+      </section>
 
-      {/* FAQ Section - Placeholder */}
-      <SectionWrapper>
+      {/* FAQ Section - Light grey */}
+      <SectionWrapper className="bg-secondary/30">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">Frequently Asked Questions</h2>
         <div className="max-w-3xl mx-auto space-y-4">
           <p className="text-lg text-muted-foreground text-center">FAQ content will be added here soon.</p>
-          {/* Example FAQ Item structure (can use Accordion component from shadcn/ui)
-           <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger>Is this program right for me?</AccordionTrigger>
-              <AccordionContent>
-                Details about who this program is best suited for...
-              </AccordionContent>
-            </AccordionItem>
-           </Accordion>
-           */}
         </div>
       </SectionWrapper>
     </>;
 };
+
 export default AttachmentAlchemyPage;
