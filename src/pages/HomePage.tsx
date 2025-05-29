@@ -1,4 +1,3 @@
-
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
@@ -7,8 +6,9 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { CheckCircle } from 'lucide-react';
 
-// Placeholder image URL - replace with Chloe's actual or preferred stock photo
-const heroImageUrl = "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80";
+// Different tree photo
+const heroImageUrl = "https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80";
+
 const HomePage: React.FC = () => {
   return <>
       {/* Hero Section */}
@@ -27,10 +27,7 @@ const HomePage: React.FC = () => {
             <div className="space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in" style={{
             animationDelay: '0.6s'
           }}>
-              <CallToActionButton to="/attachment-alchemy" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Discover Attachment Alchemy
-              </CallToActionButton>
-              <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+              <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-black text-white hover:bg-gray-800">
                 Book a Discovery Call
               </CallToActionButton>
             </div>
