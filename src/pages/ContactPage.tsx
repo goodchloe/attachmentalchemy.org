@@ -1,4 +1,3 @@
-
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
@@ -8,8 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Mail, Phone, Calendar } from 'lucide-react'; // Assuming Calendar for Acuity link
 
 const ContactPage: React.FC = () => {
-  return (
-    <SectionWrapper>
+  return <SectionWrapper>
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">Let's Connect</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -22,14 +20,8 @@ const ContactPage: React.FC = () => {
         <div className="bg-card p-8 rounded-lg shadow-xl">
           <h2 className="text-2xl font-semibold text-foreground mb-6">Send a Message</h2>
           {/* Netlify form integration */}
-          <form 
-            name="contact" 
-            method="POST" 
-            data-netlify="true" 
-            data-netlify-honeypot="bot-field"
-            className="space-y-6"
-            action="/contact-success" // Optional: Define a success page
-          >
+          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" className="space-y-6" action="/contact-success" // Optional: Define a success page
+        >
             {/* Hidden input for Netlify to identify the form */}
             <input type="hidden" name="form-name" value="contact" />
             {/* Honeypot field for spam prevention, should be hidden from users */}
@@ -77,14 +69,14 @@ const ContactPage: React.FC = () => {
               </div>
               {/* Optional Phone */}
               {/*
-              <div className="flex items-center space-x-3">
+               <div className="flex items-center space-x-3">
                 <Phone className="h-6 w-6 text-primary" />
                 <div>
                   <h3 className="font-semibold text-foreground">Phone</h3>
                   <p className="text-muted-foreground">(If Chloe wishes to list a phone number)</p>
                 </div>
-              </div>
-              */}
+               </div>
+               */}
             </div>
           </div>
 
@@ -94,18 +86,14 @@ const ContactPage: React.FC = () => {
             <p className="text-muted-foreground mb-6">
               Ready to explore how we can work together? Schedule your complimentary call to discuss your needs and see if we're a good fit.
             </p>
-            <CallToActionButton 
-              href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
-            >
+            <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-primary hover:bg-primary/90 text-primary-foreground">
               Schedule Your Call
             </CallToActionButton>
-            <p className="mt-2 text-sm text-muted-foreground">(Links to Acuity Scheduling)</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+          </p>
           </div>
         </div>
       </div>
-    </SectionWrapper>
-  );
+    </SectionWrapper>;
 };
-
 export default ContactPage;
