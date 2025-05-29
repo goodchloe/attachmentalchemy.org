@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'; // Assuming you have a shadcn B
 const navItems = [
   { name: 'Home', path: '/' },
   { name: 'About Chloe', path: '/about' },
-  { name: 'Attachment Alchemy', path: '/attachment-alchemy' },
+  { name: 'Offerings', path: '/offerings' },
   { name: 'Coaching', path: '/coaching' },
   { name: 'Contact', path: '/contact' },
 ];
