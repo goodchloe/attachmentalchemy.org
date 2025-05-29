@@ -1,10 +1,8 @@
-
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { CheckCircle, Users, Leaf, Mic, BookOpen } from 'lucide-react';
-
 const FeatureCard: React.FC<{
   icon: React.ElementType;
   title: string;
@@ -22,27 +20,23 @@ const FeatureCard: React.FC<{
       {children}
     </CardContent>
   </Card>;
-
 const AttachmentAlchemyPage: React.FC = () => {
   return <>
       {/* Hero Section with trees photo */}
       <SectionWrapper className="!py-0">
         <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center text-center rounded-lg overflow-hidden">
-          <img 
-            src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
-            alt="Forest trees reaching toward the sky" 
-            className="absolute inset-0 w-full h-full object-cover filter brightness-50" 
-          />
+          <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Forest trees reaching toward the sky" className="absolute inset-0 w-full h-full object-cover filter brightness-50" />
           <div className="relative z-10 p-8 max-w-4xl mx-auto text-white">
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">
-              Attachment Alchemy: 4 Month Journey to Embodied Secure Attachment
-            </h1>
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">Attachment Alchemy: 
+4 Month Journey to Embodied Secure Attachment</h1>
           </div>
         </div>
       </SectionWrapper>
 
       {/* Introduction - Color Block Section */}
-      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{ backgroundColor: '#8FB5A3' }}>
+      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
+      backgroundColor: '#8FB5A3'
+    }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center text-white">
             <p className="text-lg md:text-xl mb-8">
@@ -85,7 +79,9 @@ const AttachmentAlchemyPage: React.FC = () => {
       </SectionWrapper>
 
       {/* Who is this for - Color Block Section */}
-      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{ backgroundColor: '#D4B5A0' }}>
+      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
+      backgroundColor: '#D4B5A0'
+    }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-white">Who is this for?</h2>
@@ -147,7 +143,9 @@ const AttachmentAlchemyPage: React.FC = () => {
       </SectionWrapper>
 
       {/* Inside Attachment Alchemy - Color Block Section */}
-      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{ backgroundColor: '#E07A5F' }}>
+      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
+      backgroundColor: '#E07A5F'
+    }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-white">Inside Attachment Alchemy</h2>
           <p className="text-xl text-center mb-10 text-white">4 Months from August 6 - December 3</p>
@@ -259,7 +257,9 @@ const AttachmentAlchemyPage: React.FC = () => {
       </SectionWrapper>
       
       {/* Investment - Color Block Section */}
-      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{ backgroundColor: '#3F5F5F' }}>
+      <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
+      backgroundColor: '#3F5F5F'
+    }}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">Investment</h2>
@@ -271,13 +271,12 @@ const AttachmentAlchemyPage: React.FC = () => {
             </Card>
             
             <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">Ready to Transform Your Life?</h2>
-            <p className="text-lg text-white mb-8">
-              If Attachment Alchemy resonates with you, the next step is to book a complimentary Clarity Call. This is an opportunity to connect, discuss your needs, and see if this program is the right fit for your journey.
-            </p>
+            <p className="text-lg text-white mb-8">If Attachment Alchemy resonates with you, the next step is to book a complimentary Clarity Call. This is an opportunity to connect, discuss your needs, and see if this program is the right fit for your journey.</p>
             <CallToActionButton href="#contact-cta" className="bg-white text-primary hover:bg-gray-100">
               Book Your Free Clarity Call
             </CallToActionButton>
-            <p className="mt-4 text-sm text-white">(This will link to Acuity Scheduling or an application form)</p>
+            <p className="mt-4 text-sm text-white">
+          </p>
           </div>
         </div>
       </section>
@@ -291,5 +290,4 @@ const AttachmentAlchemyPage: React.FC = () => {
       </SectionWrapper>
     </>;
 };
-
 export default AttachmentAlchemyPage;
