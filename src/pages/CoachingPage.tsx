@@ -38,6 +38,18 @@ const CoachingPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Transformation Image Section */}
+      <SectionWrapper>
+        <div className="text-center max-w-4xl mx-auto">
+          <img src="/lovable-uploads/fc326a4a-0946-40f4-a81d-f8dbced3005f.png" alt="Woman holding a crystal ball in golden light" className="w-full max-w-2xl mx-auto h-96 object-cover rounded-lg shadow-xl mb-8" />
+          <h3 className="text-2xl font-semibold text-primary mb-4">Clarity Through Embodied Presence</h3>
+          <p className="text-lg text-muted-foreground">
+            When we cultivate safety in our nervous system and presence in our body, clarity naturally emerges. 
+            This work helps you access your inner wisdom and make decisions from a place of deep knowing rather than fear or reactivity.
+          </p>
+        </div>
+      </SectionWrapper>
+
       {/* My 1-on-1 Offerings - Color Block Section */}
       <section className="py-12 md:py-16 lg:py-20" style={{ backgroundColor: '#D4B5A0' }}>
         <div className="w-full px-4 sm:px-6 lg:px-8">
@@ -81,8 +93,26 @@ const CoachingPage: React.FC = () => {
         </div>
       </section>
 
-      {/* What to Expect - Light grey */}
+      {/* Nature Connection Section */}
       <SectionWrapper className="bg-secondary/30">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-center">
+          <div>
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Forest path with sunlight streaming through trees" className="w-full h-80 object-cover rounded-lg shadow-lg" />
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-2xl font-semibold text-primary">Healing in Nature's Embrace</h3>
+            <p className="text-lg text-muted-foreground">
+              Nature is one of our most powerful co-regulators. When we ground ourselves in the natural world, our nervous systems naturally soften and find safety. This creates the perfect container for deep healing work.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              My day-long intensives harness this healing power, combining somatic practices with the restorative energy of forests, mountains, and open spaces.
+            </p>
+          </div>
+        </div>
+      </SectionWrapper>
+
+      {/* What to Expect - Light grey */}
+      <SectionWrapper>
         <Card className="max-w-2xl mx-auto text-center shadow-lg">
             <CardHeader>
                 <CardTitle className="text-3xl text-primary">What to Expect in a Session</CardTitle>

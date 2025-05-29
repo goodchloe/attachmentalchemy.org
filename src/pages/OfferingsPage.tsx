@@ -50,8 +50,26 @@ const OfferingsPage: React.FC = () => {
         </div>
       </SectionWrapper>
 
+      {/* Connection and Nature Section */}
+      <SectionWrapper className="bg-secondary/30">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-center">
+          <div>
+            <img src="/lovable-uploads/fea84654-055d-4e9f-9d35-bbe808d85cbc.png" alt="Woman in golden light holding a crystal ball" className="w-full h-80 object-cover rounded-lg shadow-lg" />
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-2xl font-semibold text-primary">Embracing Your Inner Light</h3>
+            <p className="text-lg text-muted-foreground">
+              Through somatic practices and embodied healing, we reconnect you with your natural radiance and wisdom. This work isn't just about healing wounds—it's about reclaiming the brilliant essence that is uniquely yours.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              When we feel safe in our bodies, we naturally open to deeper connection, clearer purpose, and authentic aliveness.
+            </p>
+          </div>
+        </div>
+      </SectionWrapper>
+
       {/* Are You Experiencing...? Section */}
-      <SectionWrapper className="bg-secondary/30 rounded-lg">
+      <SectionWrapper>
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-foreground">Are You Experiencing...?</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left text-lg text-muted-foreground">
@@ -61,6 +79,24 @@ const OfferingsPage: React.FC = () => {
               </li>)}
           </ul>
           <p className="mt-8 text-lg text-muted-foreground">If any of this resonates, you're in the right place. Healing is possible.</p>
+        </div>
+      </SectionWrapper>
+
+      {/* Connection and Support Section */}
+      <SectionWrapper className="bg-secondary/30">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-center">
+          <div className="order-2 md:order-1 space-y-4">
+            <h3 className="text-2xl font-semibold text-primary">Deep Connection & Support</h3>
+            <p className="text-lg text-muted-foreground">
+              Healing happens in relationship. Whether through our group programs or 1-on-1 work, you'll experience the power of being truly seen, held, and supported as you navigate your transformation.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              Our community creates a safe container where vulnerability becomes strength and authentic connection flourishes.
+            </p>
+          </div>
+          <div className="order-1 md:order-2">
+            <img src="/lovable-uploads/a010a657-62ee-4509-a3b2-0a585f505f8b.png" alt="Hands connecting in support" className="w-full h-80 object-cover rounded-lg shadow-lg" />
+          </div>
         </div>
       </SectionWrapper>
 
