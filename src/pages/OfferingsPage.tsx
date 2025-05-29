@@ -77,6 +77,11 @@ const OfferingsPage: React.FC = () => {
               <CardDescription className="text-lg">Your 4-Month Journey to Embodied Secure Attachment</CardDescription>
             </CardHeader>
             <CardContent>
+              <div className="mb-6">
+                <CallToActionButton to="/">
+                  Learn More About Attachment Alchemy
+                </CallToActionButton>
+              </div>
               <p className="text-muted-foreground mb-6 text-lg">
                 Attachment Alchemy is a transformative group program designed to help you heal attachment wounds, cultivate deep self-awareness, and build a thriving, securely attached community. Experience profound shifts in how you relate to yourself and others.
               </p>
@@ -86,9 +91,6 @@ const OfferingsPage: React.FC = () => {
                 <li className="flex items-center"><CheckCircle className="h-5 w-5 text-green-500 mr-2" /> Develop resilience to navigate life's challenges.</li>
                 <li className="flex items-center"><CheckCircle className="h-5 w-5 text-green-500 mr-2" /> Deepen the intimacy and connection in your romantic relationship by healing insecure attachment patterns.</li>
               </ul>
-              <CallToActionButton to="/">
-                Learn More About Attachment Alchemy
-              </CallToActionButton>
             </CardContent>
           </div>
         </Card>

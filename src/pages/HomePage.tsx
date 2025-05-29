@@ -155,6 +155,22 @@ const HomePage: React.FC = () => {
               <p className="font-semibold text-primary">- C.S., CEO Tech Startup</p>
             </CardContent>
           </Card>
+          <Card className="text-center">
+            <CardContent className="p-8">
+              <p className="text-lg text-muted-foreground mb-4 italic">
+                "Having taught Tantra for 30 years, I know when a container is pristinely held and was impressed with how Spencer built and held it."
+              </p>
+              <p className="font-semibold text-primary">- E.R.</p>
+            </CardContent>
+          </Card>
+          <Card className="text-center">
+            <CardContent className="p-8">
+              <p className="text-lg text-muted-foreground mb-4 italic">
+                "I felt so much trust in Spencer's facilitation that I was able to surrender and allow the container to truly hold me."
+              </p>
+              <p className="font-semibold text-primary">- H.R.</p>
+            </CardContent>
+          </Card>
         </div>
       </SectionWrapper>
 
@@ -187,7 +203,7 @@ const HomePage: React.FC = () => {
                 <CardTitle className="text-lg text-primary">Live Group Sessions</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">Bi-weekly online sessions with live coaching and practices</p>
+                <p className="text-muted-foreground">Weekly sessions with live teaching, coaching and practices, alternating with peer led small group practice pod meetings for deeper integration and support.</p>
               </CardContent>
             </Card>
             <Card className="text-center bg-white/90">
