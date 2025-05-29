@@ -176,7 +176,7 @@ const AttachmentAlchemyPage: React.FC = () => {
             </Card>
             <Card className="text-center bg-white/90">
               <CardHeader>
-                <CardTitle className="text-lg text-primary">Peer Practice Partners</CardTitle>
+                <CardTitle className="text-lg text-primary">Peer Counseling Practice Partners</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">Deepen secure attachment and work through blocks together</p>
@@ -192,7 +192,7 @@ const AttachmentAlchemyPage: React.FC = () => {
             </Card>
             <Card className="text-center bg-white/90">
               <CardHeader>
-                <CardTitle className="text-lg text-primary">Movement & Energy</CardTitle>
+                <CardTitle className="text-lg text-primary">Movement & Energy Practices</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">Practices to integrate transformations in your body and nervous system</p>
