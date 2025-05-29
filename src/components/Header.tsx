@@ -5,7 +5,7 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button'; // Assuming you have a shadcn Button
 
 const navItems = [
-  { name: 'Home', path: '/' },
+  { name: 'Attachment Alchemy', path: '/' },
   { name: 'About Chloe', path: '/about' },
   { name: 'Offerings', path: '/offerings' },
   { name: 'Coaching', path: '/coaching' },
