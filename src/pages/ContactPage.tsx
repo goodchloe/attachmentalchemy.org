@@ -1,3 +1,4 @@
+
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
@@ -34,7 +35,7 @@ const ContactPage: React.FC = () => {
             {/* Honeypot field for spam prevention, should be hidden from users */}
             <p className="hidden">
               <label>
-                Don’t fill this out if you’re human: <input name="bot-field" />
+                Don't fill this out if you're human: <input name="bot-field" />
               </label>
             </p>
 
@@ -69,8 +70,8 @@ const ContactPage: React.FC = () => {
                 <Mail className="h-6 w-6 text-primary" />
                 <div>
                   <h3 className="font-semibold text-foreground">Email</h3>
-                  <a href="mailto:chloe@chloegood.com" className="text-muted-foreground hover:text-primary transition-colors">
-                    chloe@chloegood.com <span className="text-xs">(Replace with actual email)</span>
+                  <a href="mailto:chloe.good@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    chloe.good@gmail.com
                   </a>
                 </div>
               </div>
@@ -94,7 +95,7 @@ const ContactPage: React.FC = () => {
               Ready to explore how we can work together? Schedule your complimentary call to discuss your needs and see if we're a good fit.
             </p>
             <CallToActionButton 
-              href="https://calendly.com/chloe-good-example/discovery-call" // Replace with Chloe's actual Acuity/Calendly link
+              href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763"
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
               Schedule Your Call

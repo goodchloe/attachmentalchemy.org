@@ -1,3 +1,4 @@
+
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
@@ -29,7 +30,7 @@ const HomePage: React.FC = () => {
               <CallToActionButton to="/attachment-alchemy" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 Discover Attachment Alchemy
               </CallToActionButton>
-              <CallToActionButton href="#contact-cta" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
+              <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" variant="outline" className="border-white text-white hover:bg-white hover:text-primary">
                 Book a Discovery Call
               </CallToActionButton>
             </div>
@@ -56,7 +57,7 @@ const HomePage: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-foreground">Are You Experiencing...?</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left text-lg text-muted-foreground">
-            {["Struggles in relationships, feeling misunderstood or disconnected?", "A sense of not feeling safe in your own body or with others?", "Feeling disconnected from your emotions or physical sensations?", "A cycle of anxiety, depression, or overwhelm that therapy hasn't fully resolved?", "A longing for genuine community and deeper connections?", "Tired of traditional talk therapy that doesn't seem to create lasting change?"].map((item, index) => <li key={index} className="flex items-start space-x-3 p-4 bg-card rounded-md shadow">
+            {["Struggles in relationships, feeling misunderstood or disconnected?", "A sense of not feeling safe in your own body or with others?", "Feeling disconnected from your emotions or physical sensations?", "A cycle of anxiety, depression, or overwhelm that therapy hasn't fully resolved?", "Tired of traditional talk therapy that doesn't seem to create lasting change?"].map((item, index) => <li key={index} className="flex items-start space-x-3 p-4 bg-card rounded-md shadow">
                 <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <span>{item}</span>
               </li>)}
@@ -85,6 +86,7 @@ const HomePage: React.FC = () => {
                 <li className="flex items-center"><CheckCircle className="h-5 w-5 text-green-500 mr-2" /> Feel safe and at home in your body.</li>
                 <li className="flex items-center"><CheckCircle className="h-5 w-5 text-green-500 mr-2" /> Build nourishing, authentic connections.</li>
                 <li className="flex items-center"><CheckCircle className="h-5 w-5 text-green-500 mr-2" /> Develop resilience to navigate life's challenges.</li>
+                <li className="flex items-center"><CheckCircle className="h-5 w-5 text-green-500 mr-2" /> Deepen the intimacy and connection in your romantic relationship by healing insecure attachment patterns.</li>
               </ul>
               <CallToActionButton to="/attachment-alchemy">
                 Learn More About Attachment Alchemy
@@ -114,9 +116,9 @@ const HomePage: React.FC = () => {
           <p className="text-muted-foreground mb-6">
             Receive insights, resources, and updates on upcoming programs and offerings directly to your inbox.
           </p>
-          <form className="space-y-4">
-            <Input type="text" placeholder="Your Name" className="bg-background" />
-            <Input type="email" placeholder="Your Email" className="bg-background" />
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSdyourformid/formResponse" method="POST" className="space-y-4">
+            <Input type="text" name="entry.yournameentry" placeholder="Your Name" className="bg-background" required />
+            <Input type="email" name="entry.youremailentry" placeholder="Your Email" className="bg-background" required />
             <Button type="submit" size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">Subscribe</Button>
           </form>
         </div>
