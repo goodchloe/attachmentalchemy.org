@@ -1,8 +1,10 @@
+
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { CheckCircle, Users, Leaf, Mic, BookOpen } from 'lucide-react';
+
 const FeatureCard: React.FC<{
   icon: React.ElementType;
   title: string;
@@ -20,6 +22,7 @@ const FeatureCard: React.FC<{
       {children}
     </CardContent>
   </Card>;
+
 const AttachmentAlchemyPage: React.FC = () => {
   return <>
       {/* Hero Section with trees photo */}
@@ -27,19 +30,22 @@ const AttachmentAlchemyPage: React.FC = () => {
         <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center text-center rounded-lg overflow-hidden">
           <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Forest trees reaching toward the sky" className="absolute inset-0 w-full h-full object-cover filter brightness-50" />
           <div className="relative z-10 p-8 max-w-4xl mx-auto text-white">
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">Attachment Alchemy: 
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">Attachment Alchemy: 
 4 Month Journey to Embodied Secure Attachment</h1>
           </div>
         </div>
       </SectionWrapper>
 
+      {/* Add whitespace between hero and intro */}
+      <div className="py-8"></div>
+
       {/* Introduction - Color Block Section */}
       <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
       backgroundColor: '#8FB5A3'
     }}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <p className="text-lg md:text-xl mb-8">
+            <p className="text-xl md:text-2xl font-bold mb-8">
               Are you feeling the call to deepen your capacity for intimacy, safety, and authentic connection in 2025?
             </p>
             <p className="text-lg md:text-xl mb-8">
@@ -82,7 +88,7 @@ const AttachmentAlchemyPage: React.FC = () => {
       <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
       backgroundColor: '#D4B5A0'
     }}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-white">Who is this for?</h2>
             <div className="grid md:grid-cols-1 gap-6 text-lg text-white">
@@ -105,6 +111,10 @@ const AttachmentAlchemyPage: React.FC = () => {
               <div className="flex items-start space-x-3">
                 <CheckCircle className="h-6 w-6 text-white flex-shrink-0 mt-1" />
                 <p>You're longing to welcome a committed partner into your life while maintaining your authenticity and working through anxious or avoidant patterns that have sabotaged your relationships in the past.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="h-6 w-6 text-white flex-shrink-0 mt-1" />
+                <p>You're in a relationship and you want to deepen your secure attachment with each other and learn to metabolize insecure attachment patterns that get in the way of deeper connection.</p>
               </div>
             </div>
           </div>
@@ -146,7 +156,7 @@ const AttachmentAlchemyPage: React.FC = () => {
       <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
       backgroundColor: '#E07A5F'
     }}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-white">Inside Attachment Alchemy</h2>
           <p className="text-xl text-center mb-10 text-white">4 Months from August 6 - December 3</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -155,7 +165,7 @@ const AttachmentAlchemyPage: React.FC = () => {
                 <CardTitle className="text-lg text-primary">Kickoff Immersion</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">August 6th - 4-day in-person retreat in Northern California</p>
+                <p className="text-muted-foreground">September 4-7 - 4-day in-person retreat in Northern California. *Food & Lodging not included in course cost</p>
               </CardContent>
             </Card>
             <Card className="text-center bg-white/90">
@@ -260,7 +270,7 @@ const AttachmentAlchemyPage: React.FC = () => {
       <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
       backgroundColor: '#3F5F5F'
     }}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">Investment</h2>
             <p className="text-xl text-white mb-6">This is a significant investment in your transformation.</p>
@@ -272,7 +282,7 @@ const AttachmentAlchemyPage: React.FC = () => {
             
             <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">Ready to Transform Your Life?</h2>
             <p className="text-lg text-white mb-8">If Attachment Alchemy resonates with you, the next step is to book a complimentary Clarity Call. This is an opportunity to connect, discuss your needs, and see if this program is the right fit for your journey.</p>
-            <CallToActionButton href="#contact-cta" className="bg-white text-primary hover:bg-gray-100">
+            <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-white text-primary hover:bg-gray-100">
               Book Your Free Clarity Call
             </CallToActionButton>
             <p className="mt-4 text-sm text-white">
@@ -280,14 +290,6 @@ const AttachmentAlchemyPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* FAQ Section - Light grey */}
-      <SectionWrapper className="bg-secondary/30">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">Frequently Asked Questions</h2>
-        <div className="max-w-3xl mx-auto space-y-4">
-          <p className="text-lg text-muted-foreground text-center">FAQ content will be added here soon.</p>
-        </div>
-      </SectionWrapper>
     </>;
 };
 export default AttachmentAlchemyPage;
