@@ -32,6 +32,11 @@ const AttachmentAlchemyPage: React.FC = () => {
           <div className="relative z-10 p-8 max-w-4xl mx-auto text-white">
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">Attachment Alchemy: 
 4 Month Journey to Embodied Secure Attachment</h1>
+            <div className="mt-8">
+              <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-white text-primary hover:bg-gray-100" size="lg">
+                Book a Clarity Call
+              </CallToActionButton>
+            </div>
           </div>
         </div>
       </SectionWrapper>
@@ -45,7 +50,7 @@ const AttachmentAlchemyPage: React.FC = () => {
     }}>
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center text-white">
-            <p className="text-xl md:text-2xl font-bold mb-8">
+            <p className="text-2xl md:text-3xl font-bold mb-8">
               Are you feeling the call to deepen your capacity for intimacy, safety, and authentic connection in 2025?
             </p>
             <p className="text-lg md:text-xl mb-8">
@@ -212,7 +217,7 @@ const AttachmentAlchemyPage: React.FC = () => {
           <div className="text-center mt-8">
             <Card className="bg-white/90 inline-block">
               <CardContent className="p-6">
-                <CardTitle className="text-xl text-primary mb-2">Supportive Community</CardTitle>
+                <CardTitle className="text-lg text-primary mb-2">Supportive Community</CardTitle>
                 <p className="text-muted-foreground">Deep, loving, supportive, intelligent peers</p>
               </CardContent>
             </Card>
@@ -278,6 +283,7 @@ const AttachmentAlchemyPage: React.FC = () => {
               <CardTitle className="text-primary mb-2 text-lg">Program Cost: 
   Sliding scale $4500 - $7000</CardTitle>
               <CardDescription>Payment plans and partial scholarships available.</CardDescription>
+              <p className="text-sm text-muted-foreground mt-2">*In person retreat food & lodging not included in course cost.</p>
             </Card>
             
             <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">Ready to Transform Your Life?</h2>
