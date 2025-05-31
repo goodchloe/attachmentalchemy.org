@@ -3,6 +3,7 @@ import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { CheckCircle, Users, Leaf, Mic, BookOpen } from 'lucide-react';
+
 const FeatureCard: React.FC<{
   icon: React.ElementType;
   title: string;
@@ -20,6 +21,7 @@ const FeatureCard: React.FC<{
       {children}
     </CardContent>
   </Card>;
+
 const AttachmentAlchemyPage: React.FC = () => {
   return <>
       {/* Hero Section with trees photo */}
@@ -63,13 +65,69 @@ const AttachmentAlchemyPage: React.FC = () => {
 
       {/* What does it mean section - Light grey */}
       <SectionWrapper className="bg-secondary/30">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">What You'll Discover</h2>
-          <div className="space-y-6 text-lg text-muted-foreground">
-            <p className="text-center mb-8">
-              What does it mean to open your nervous system to love, safety, and purpose—and let life move through you with clarity and power?
-            </p>
-            <div className="grid md:grid-cols-1 gap-6">
+          <p className="text-lg text-muted-foreground text-center mb-12">
+            What does it mean to open your nervous system to love, safety, and purpose—and let life move through you with clarity and power?
+          </p>
+          
+          <div className="space-y-12">
+            {/* Embodied Secure Attachment */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="relative rounded-lg overflow-hidden h-80">
+                <img 
+                  src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" 
+                  alt="Sun light passing through green leafed tree" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Embodied Secure Attachment as a Lived Experience</h3>
+                <p className="text-lg text-muted-foreground">
+                  Attachment Alchemy helps you rewire your nervous system to feel safe, loved, and connected — not just intellectually, but in your body and relationships. It moves beyond theory, guiding you to embody secure attachment in real-time, creating deep trust within yourself and with others.
+                </p>
+              </div>
+            </div>
+
+            {/* Authentic Connected Relationships */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="md:order-2">
+                <div className="relative rounded-lg overflow-hidden h-80">
+                  <img 
+                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
+                    alt="People sitting together with laptops, representing community and connection" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="md:order-1">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Authentic Connected Relationships</h3>
+                <p className="text-lg text-muted-foreground">
+                  You don't heal alone. The program is a living relational laboratory where you practice new patterns of connection, repair, and intimacy in real relationships. Through peer partnerships, group dynamics, and guided somatic work, you experience what it's like to belong, to be met, and to co-regulate safely.
+                </p>
+              </div>
+            </div>
+
+            {/* Freedom to Live Authentically */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="relative rounded-lg overflow-hidden h-80">
+                <img 
+                  src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1075&q=80" 
+                  alt="Bird's eye view of green mountains representing freedom and purpose" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">Freedom to Live Authentically and Purposefully</h3>
+                <p className="text-lg text-muted-foreground">
+                  By metabolizing old attachment wounds, you unlock more capacity for aliveness, purpose, and courage. Attachment Alchemy isn't just about healing — it's about freeing up the energy to go after the relationships, dreams, and life that deeply matter to you.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <div className="grid md:grid-cols-1 gap-6 text-lg text-muted-foreground max-w-4xl mx-auto">
               <div className="flex items-start space-x-3">
                 <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
                 <p>In Attachment Alchemy, you'll learn to relate from a regulated, securely attached self—so your presence naturally inspires trust, depth, and transformation.</p>
