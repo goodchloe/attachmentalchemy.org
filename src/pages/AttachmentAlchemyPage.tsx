@@ -83,6 +83,9 @@ const AttachmentAlchemyPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Embodied Secure Attachment as a Lived Experience</h3>
+                <p className="text-lg text-muted-foreground mb-4">
+                  In Attachment Alchemy, you'll learn to relate from a regulated, securely attached self—so your presence naturally inspires trust, depth, and transformation.
+                </p>
                 <p className="text-lg text-muted-foreground">
                   Attachment Alchemy helps you rewire your nervous system to feel safe, loved, and connected — not just intellectually, but in your body and relationships. It moves beyond theory, guiding you to embody secure attachment in real-time, creating deep trust within yourself and with others.
                 </p>
@@ -102,6 +105,9 @@ const AttachmentAlchemyPage: React.FC = () => {
               </div>
               <div className="md:order-1">
                 <h3 className="text-2xl font-bold text-foreground mb-4">Authentic Connected Relationships</h3>
+                <p className="text-lg text-muted-foreground mb-4">
+                  Develop the clarity, confidence, and embodied tools to show up authentically in your relationships, your work, and your leadership.
+                </p>
                 <p className="text-lg text-muted-foreground">
                   You don't heal alone. The program is a living relational laboratory where you practice new patterns of connection, repair, and intimacy in real relationships. Through peer partnerships, group dynamics, and guided somatic work, you experience what it's like to belong, to be met, and to co-regulate safely.
                 </p>
@@ -119,6 +125,9 @@ const AttachmentAlchemyPage: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">Freedom to Live Authentically and Purposefully</h3>
+                <p className="text-lg text-muted-foreground mb-4">
+                  Learn to navigate complex relational dynamics and hold space for deep healing—whether that's with clients, teams, or loved ones.
+                </p>
                 <p className="text-lg text-muted-foreground">
                   By metabolizing old attachment wounds, you unlock more capacity for aliveness, purpose, and courage. Attachment Alchemy isn't just about healing — it's about freeing up the energy to go after the relationships, dreams, and life that deeply matter to you.
                 </p>
@@ -293,7 +302,7 @@ const AttachmentAlchemyPage: React.FC = () => {
             </CardHeader>
             <CardContent className="text-muted-foreground text-left">
               <p className="mb-4">Chloe has guided hundreds of visionaries to move towards embodied secure attachment and align their lives to their higher purpose for the past 12 years. Chloe taught Leadership for Stanford & Sonoma State University and consults Leaders at companies like eBay, Accenture, Square, Facebook and various San Francisco Bay Area startups aligning leaders to their higher purpose to create the world we all want to live in.</p>
-              <p className="mb-4">Chloe integrates over 20,000 hours of training and experience and 50 trainings, including the Adult Attachment Repair Model (aka stick work), Hakomi Somatic Therapy, Secure Attachment to Nature, mindfulness meditation, Life Purpose Work, Internal Family Systems, Energy Work, Strengths Based Leadership and Integrative Quantum Medicine. She earned her BA from Columbia University in the City of New York.</p>
+              <p className="mb-4">Chloe integrates over 20,000 hours of training and experience and 50 trainings, including the Adult Attachment Repair Model (aka stick work), Hakomi Somatic Therapy, Secure Attachment to Nature, mindfulness meditation, Life Purpose Work, Internal Family Systems, Energy Work, Strengths Based Leadership and Integrative Quantum Medicine. She earned her BA from Columbia University in the City of New York.</p>
               <p>
                 Chloe is a community builder, having co-created over 40 Co-Housing Living Communities in San Francisco and NYC. Chloe also loves to travel and has visited over 30 countries on 5 continents. Chloe is also the founder of Own Your Magic, which combines Chloe's ability to guide women and men to deep transformation, secure attachment and fulfill their higher purpose supported by an amazing network and community.
               </p>
