@@ -94,8 +94,8 @@ const AttachmentAlchemyPage: React.FC = () => {
               <div className="md:order-2">
                 <div className="relative rounded-lg overflow-hidden h-80">
                   <img 
-                    src="https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-                    alt="Two people connecting intimately in a natural forest setting" 
+                    src="/lovable-uploads/29365ad1-e489-42fd-913b-f2f038090f88.png" 
+                    alt="Two people connecting intimately in a natural outdoor setting" 
                     className="w-full h-full object-cover"
                   />
                 </div>
