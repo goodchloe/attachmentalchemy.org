@@ -76,8 +76,8 @@ const AttachmentAlchemyPage: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="relative rounded-lg overflow-hidden h-80">
                 <img 
-                  src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" 
-                  alt="Sun light passing through green leafed tree" 
+                  src="/lovable-uploads/49708943-dad0-479d-b339-809b49f01959.png" 
+                  alt="Person in red fabric in warm nature setting" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -94,8 +94,8 @@ const AttachmentAlchemyPage: React.FC = () => {
               <div className="md:order-2">
                 <div className="relative rounded-lg overflow-hidden h-80">
                   <img 
-                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-                    alt="People sitting together with laptops, representing community and connection" 
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
+                    alt="Group of people embracing in a natural outdoor setting, showing connection and togetherness" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -112,8 +112,8 @@ const AttachmentAlchemyPage: React.FC = () => {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div className="relative rounded-lg overflow-hidden h-80">
                 <img 
-                  src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1075&q=80" 
-                  alt="Bird's eye view of green mountains representing freedom and purpose" 
+                  src="/lovable-uploads/d2f810da-257c-477e-97b6-0e66d5596dc7.png" 
+                  alt="Person expressing joy and freedom outdoors with radiant sunlight" 
                   className="w-full h-full object-cover"
                 />
               </div>
