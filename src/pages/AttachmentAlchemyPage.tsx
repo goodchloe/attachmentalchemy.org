@@ -1,10 +1,8 @@
-
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { CheckCircle, Users, Leaf, Mic, BookOpen } from 'lucide-react';
-
 const FeatureCard: React.FC<{
   icon: React.ElementType;
   title: string;
@@ -22,7 +20,6 @@ const FeatureCard: React.FC<{
       {children}
     </CardContent>
   </Card>;
-
 const AttachmentAlchemyPage: React.FC = () => {
   return <>
       {/* Hero Section with trees photo */}
@@ -164,14 +161,14 @@ const AttachmentAlchemyPage: React.FC = () => {
     }}>
         <div className="w-full px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-white">Inside Attachment Alchemy</h2>
-          <p className="text-xl text-center mb-10 text-white">4 Months from August 6 - December 3</p>
+          <p className="text-xl text-center mb-10 text-white">4 Months | August 6 - December 3</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="text-center bg-white/90">
               <CardHeader>
                 <CardTitle className="text-lg text-primary">Kickoff Immersion</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">September 4-7 - 4-day in-person retreat in Northern California. *Food & Lodging not included in course cost</p>
+                <p className="text-muted-foreground">September 4-7 - 4-day in-person retreat in Northern California. *Food & lodging not included in course cost</p>
               </CardContent>
             </Card>
             <Card className="text-center bg-white/90">
@@ -237,12 +234,8 @@ const AttachmentAlchemyPage: React.FC = () => {
               <CardDescription className="text-lg">Somatic Attachment Repair & Executive Coach</CardDescription>
             </CardHeader>
             <CardContent className="text-muted-foreground text-left">
-              <p className="mb-4">
-                Chloe has guided hundreds of visionary women and men to move towards secure attachment and align their lives to their higher purpose for the past 12 years. Chloe taught Leadership for Stanford & Sonoma State University and consults Leaders at companies like eBay, Accenture, Square, Facebook and various San Francisco Bay Area startups aligning leaders to their higher purpose to create the world we all want to live in.
-              </p>
-              <p className="mb-4">
-                Chloe integrates over 20,000 hours of training and experience and 50 trainings, including the Adult Attachment Repair Model (aka stick work), Secure Attachment to Nature, Hakomi Somatic Therapy, mindfulness meditation, Life Purpose Work, Internal Family Systems, Energy Work, Strengths Based Leadership and Integrative Quantum Medicine. She earned her BA from Columbia University in the City of New York.
-              </p>
+              <p className="mb-4">Chloe has guided hundreds of visionaries to move towards embodied secure attachment and align their lives to their higher purpose for the past 12 years. Chloe taught Leadership for Stanford & Sonoma State University and consults Leaders at companies like eBay, Accenture, Square, Facebook and various San Francisco Bay Area startups aligning leaders to their higher purpose to create the world we all want to live in.</p>
+              <p className="mb-4">Chloe integrates over 20,000 hours of training and experience and 50 trainings, including the Adult Attachment Repair Model (aka stick work), Hakomi Somatic Therapy, Secure Attachment to Nature, mindfulness meditation, Life Purpose Work, Internal Family Systems, Energy Work, Strengths Based Leadership and Integrative Quantum Medicine. She earned her BA from Columbia University in the City of New York.</p>
               <p>
                 Chloe is a community builder, having co-created over 40 Co-Housing Living Communities in San Francisco and NYC. Chloe also loves to travel and has visited over 30 countries on 5 continents. Chloe is also the founder of Own Your Magic, which combines Chloe's ability to guide women and men to deep transformation, secure attachment and fulfill their higher purpose supported by an amazing network and community.
               </p>
