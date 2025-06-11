@@ -1,3 +1,4 @@
+
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
@@ -31,7 +32,7 @@ const AttachmentAlchemyPage: React.FC = () => {
           <div className="relative z-10 p-8 max-w-4xl mx-auto text-white">
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">Attachment Alchemy: 
 4 Month Journey to Embodied Secure Attachment</h1>
-            <p className="text-2xl md:text-3xl font-semibold mb-8">Aug 6 - Dec 3</p>
+            <p className="font-serif text-2xl md:text-3xl font-semibold mb-8">Aug 6 - Dec 3</p>
             
             <div className="mt-8">
               <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-white text-primary hover:bg-gray-100" size="lg">
