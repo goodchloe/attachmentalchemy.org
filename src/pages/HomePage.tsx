@@ -2,6 +2,7 @@
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
+import EmailPopup from '@/components/EmailPopup';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { CheckCircle, Users, Leaf, Mic, BookOpen } from 'lucide-react';
 
@@ -25,6 +26,8 @@ const FeatureCard: React.FC<{
 
 const HomePage: React.FC = () => {
   return <>
+      <EmailPopup />
+      
       {/* Hero Section with trees photo */}
       <SectionWrapper className="!py-0">
         <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center text-center rounded-lg overflow-hidden">
