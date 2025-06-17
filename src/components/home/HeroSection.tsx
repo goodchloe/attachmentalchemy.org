@@ -1,0 +1,25 @@
+
+import React from 'react';
+import SectionWrapper from '@/components/SectionWrapper';
+import CallToActionButton from '@/components/CallToActionButton';
+
+const HeroSection: React.FC = () => {
+  return (
+    <SectionWrapper className="!py-0">
+      <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center text-center rounded-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Forest trees reaching toward the sky" className="absolute inset-0 w-full h-full object-cover filter brightness-50" />
+        <div className="relative z-10 p-8 max-w-4xl mx-auto text-white">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">Attachment Alchemy: 
+4 Month Journey to Embodied Secure Attachment</h1>
+          <div className="mt-8">
+            <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-white text-primary hover:bg-gray-100" size="lg">
+              Book a Clarity Call
+            </CallToActionButton>
+          </div>
+        </div>
+      </div>
+    </SectionWrapper>
+  );
+};
+
+export default HeroSection;
