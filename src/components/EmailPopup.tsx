@@ -8,10 +8,10 @@ const EmailPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Show popup after 3 seconds
+    // Show popup after 10 seconds
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 3000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
