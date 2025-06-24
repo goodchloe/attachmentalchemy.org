@@ -8,29 +8,55 @@ const EmailPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
+    console.log('EmailPopup mounted, setting timer for 10 seconds');
     // Show popup after 10 seconds
     const timer = setTimeout(() => {
+      console.log('Timer fired, showing popup');
       setIsOpen(true);
     }, 10000);
 
-    return () => clearTimeout(timer);
+    return () => {
+      console.log('EmailPopup cleanup, clearing timer');
+      clearTimeout(timer);
+    };
   }, []);
 
   useEffect(() => {
+    console.log('EmailPopup isOpen state changed:', isOpen);
+  }, [isOpen]);
+
+  useEffect(() => {
+    console.log('Loading beehiiv script');
     // Load beehiiv script
     const script = document.createElement('script');
     script.async = true;
     script.src = 'https://subscribe-forms.beehiiv.com/embed.js';
     document.head.appendChild(script);
 
+    script.onload = () => {
+      console.log('Beehiiv script loaded successfully');
+    };
+
+    script.onerror = () => {
+      console.error('Failed to load beehiiv script');
+    };
+
     return () => {
       // Cleanup script if component unmounts
       const existingScript = document.querySelector('script[src="https://subscribe-forms.beehiiv.com/embed.js"]');
       if (existingScript) {
         document.head.removeChild(existingScript);
+        console.log('Beehiiv script removed');
       }
     };
   }, []);
+
+  const handleClose = () => {
+    console.log('Popup closed by user');
+    setIsOpen(false);
+  };
+
+  console.log('EmailPopup rendering, isOpen:', isOpen);
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -64,7 +90,7 @@ const EmailPopup: React.FC = () => {
           variant="ghost"
           size="icon"
           className="absolute right-4 top-4"
-          onClick={() => setIsOpen(false)}
+          onClick={handleClose}
         >
           <X className="h-4 w-4" />
         </Button>
