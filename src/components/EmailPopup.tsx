@@ -60,40 +60,42 @@ const EmailPopup: React.FC = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-md p-0 bg-white">
-        <DialogHeader className="p-6 pb-4">
-          <DialogTitle className="text-2xl font-semibold text-center text-primary">
-            Stay Connected & Inspired
-          </DialogTitle>
-          <DialogDescription className="text-center text-muted-foreground">
-            Get insights, resources, and updates on healing and transformation directly to your inbox.
-          </DialogDescription>
-        </DialogHeader>
-        
-        <div className="px-6 pb-6">
-          <iframe 
-            src="https://subscribe-forms.beehiiv.com/c67a5af1-d12a-4d90-9a7b-2fb422daba82" 
-            className="beehiiv-embed w-full h-64" 
-            data-test-id="beehiiv-embed" 
-            frameBorder="0" 
-            scrolling="no"
-            style={{
-              margin: 0,
-              borderRadius: '0px 0px 0px 0px',
-              backgroundColor: 'transparent',
-              boxShadow: '0 0 #0000'
-            }}
-          />
-        </div>
+      <DialogContent className="max-w-lg p-0 bg-white border-0 shadow-xl">
+        <div className="relative">
+          <DialogHeader className="p-8 pb-6 text-center">
+            <DialogTitle className="text-2xl font-serif font-semibold text-primary mb-3">
+              Attachment Alchemy Updates
+            </DialogTitle>
+            <DialogDescription className="text-base text-muted-foreground leading-relaxed">
+              Upcoming Courses & Attachment Teachings
+            </DialogDescription>
+          </DialogHeader>
+          
+          <div className="px-8 pb-8">
+            <iframe 
+              src="https://subscribe-forms.beehiiv.com/c67a5af1-d12a-4d90-9a7b-2fb422daba82" 
+              className="w-full h-40 border-0" 
+              data-test-id="beehiiv-embed" 
+              frameBorder="0" 
+              scrolling="no"
+              style={{
+                margin: 0,
+                borderRadius: '8px',
+                backgroundColor: 'transparent',
+                overflow: 'hidden'
+              }}
+            />
+          </div>
 
-        <Button
-          variant="ghost"
-          size="icon"
-          className="absolute right-4 top-4"
-          onClick={handleClose}
-        >
-          <X className="h-4 w-4" />
-        </Button>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="absolute right-4 top-4 hover:bg-gray-100"
+            onClick={handleClose}
+          >
+            <X className="h-4 w-4" />
+          </Button>
+        </div>
       </DialogContent>
     </Dialog>
   );
