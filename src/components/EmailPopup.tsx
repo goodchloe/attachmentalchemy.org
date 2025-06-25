@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 
 const EmailPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,30 +49,29 @@ const EmailPopup: React.FC = () => {
     };
   }, []);
 
-  const handleClose = () => {
-    console.log('Popup closed by user');
-    setIsOpen(false);
-  };
-
   console.log('EmailPopup rendering, isOpen:', isOpen);
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-lg p-0 bg-white border-0 shadow-xl flex items-center justify-center">
-        <iframe 
-          src="https://subscribe-forms.beehiiv.com/c67a5af1-d12a-4d90-9a7b-2fb422daba82" 
-          className="w-full h-96 border-0 rounded-lg" 
-          data-test-id="beehiiv-embed" 
-          frameBorder="0" 
-          scrolling="no"
-          style={{
-            margin: 0,
-            borderRadius: '8px',
-            backgroundColor: 'transparent',
-            overflow: 'hidden',
-            display: 'block'
-          }}
-        />
+      <DialogContent className="max-w-lg p-0 bg-white border-0 shadow-xl">
+        <DialogTitle className="sr-only">Email Newsletter Signup</DialogTitle>
+        <DialogDescription className="sr-only">Subscribe to our newsletter</DialogDescription>
+        <div className="w-full h-96 flex justify-start pl-6">
+          <iframe 
+            src="https://subscribe-forms.beehiiv.com/c67a5af1-d12a-4d90-9a7b-2fb422daba82" 
+            className="w-full h-full border-0 rounded-lg" 
+            data-test-id="beehiiv-embed" 
+            frameBorder="0" 
+            scrolling="no"
+            style={{
+              margin: 0,
+              borderRadius: '8px',
+              backgroundColor: 'transparent',
+              overflow: 'hidden',
+              display: 'block'
+            }}
+          />
+        </div>
       </DialogContent>
     </Dialog>
   );
