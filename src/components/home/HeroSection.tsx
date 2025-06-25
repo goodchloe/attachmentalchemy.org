@@ -11,6 +11,29 @@ const HeroSection: React.FC = () => {
         <div className="relative z-10 p-8 max-w-4xl mx-auto text-white">
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight animate-fade-in">Attachment Alchemy: 
 4 Month Journey to Embodied Secure Attachment</h1>
+          
+          {/* Photos of facilitators */}
+          <div className="flex justify-center items-center gap-6 mb-6">
+            <div className="flex flex-col items-center">
+              <img 
+                src="/lovable-uploads/9d76db4c-e415-4080-9e67-67cca0b43cd5.png" 
+                alt="Chloe Good" 
+                className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-white shadow-lg"
+              />
+            </div>
+            <div className="flex flex-col items-center">
+              <img 
+                src="/lovable-uploads/eb1444c1-90a6-4ce6-8c93-b289c40276fe.png" 
+                alt="Spencer Jacobson" 
+                className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-white shadow-lg"
+              />
+            </div>
+          </div>
+          
+          <p className="text-lg md:text-xl mb-8 text-white/90">
+            Guided by Chloe Good & Spencer Jacobson
+          </p>
+          
           <div className="mt-8">
             <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-white text-primary hover:bg-gray-100" size="lg">
               Book a Clarity Call
