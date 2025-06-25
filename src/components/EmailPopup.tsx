@@ -58,7 +58,7 @@ const EmailPopup: React.FC = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-lg p-0 bg-white border-0 shadow-xl">
+      <DialogContent className="max-w-lg p-0 bg-white border-0 shadow-xl flex items-center justify-center">
         <iframe 
           src="https://subscribe-forms.beehiiv.com/c67a5af1-d12a-4d90-9a7b-2fb422daba82" 
           className="w-full h-96 border-0 rounded-lg" 
@@ -69,7 +69,8 @@ const EmailPopup: React.FC = () => {
             margin: 0,
             borderRadius: '8px',
             backgroundColor: 'transparent',
-            overflow: 'hidden'
+            overflow: 'hidden',
+            display: 'block'
           }}
         />
       </DialogContent>
