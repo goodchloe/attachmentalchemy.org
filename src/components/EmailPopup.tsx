@@ -74,7 +74,7 @@ const EmailPopup: React.FC = () => {
           <div className="px-8 pb-8">
             <iframe 
               src="https://subscribe-forms.beehiiv.com/c67a5af1-d12a-4d90-9a7b-2fb422daba82" 
-              className="w-full h-40 border-0" 
+              className="w-full h-24 border-0" 
               data-test-id="beehiiv-embed" 
               frameBorder="0" 
               scrolling="no"
