@@ -18,14 +18,14 @@ const HeroSection: React.FC = () => {
               <img 
                 src="/lovable-uploads/9d76db4c-e415-4080-9e67-67cca0b43cd5.png" 
                 alt="Chloe Good" 
-                className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-white shadow-lg"
+                className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-lg"
               />
             </div>
             <div className="flex flex-col items-center">
               <img 
                 src="/lovable-uploads/eb1444c1-90a6-4ce6-8c93-b289c40276fe.png" 
                 alt="Spencer Jacobson" 
-                className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-white shadow-lg"
+                className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-lg"
               />
             </div>
           </div>
