@@ -1,3 +1,4 @@
+
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
@@ -86,7 +87,7 @@ const ContactPage: React.FC = () => {
             <p className="text-muted-foreground mb-6">
               Ready to explore how we can work together? Schedule your complimentary call to discuss your needs and see if we're a good fit.
             </p>
-            <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <CallToActionButton href="https://goodcoaching.as.me/?appointmentType=80123371" className="bg-primary hover:bg-primary/90 text-primary-foreground">
               Schedule Your Call
             </CallToActionButton>
             <p className="mt-2 text-sm text-muted-foreground">

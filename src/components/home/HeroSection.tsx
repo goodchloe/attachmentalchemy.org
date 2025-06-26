@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
           </p>
           
           <div className="mt-8">
-            <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-white text-primary hover:bg-gray-100" size="lg">
+            <CallToActionButton href="https://goodcoaching.as.me/?appointmentType=80123371" className="bg-white text-primary hover:bg-gray-100" size="lg">
               Book a Clarity Call
             </CallToActionButton>
           </div>

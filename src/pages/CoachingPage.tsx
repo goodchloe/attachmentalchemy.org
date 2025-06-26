@@ -134,7 +134,7 @@ const CoachingPage: React.FC = () => {
               If you're feeling called to this deep, personalized work, I invite you to schedule a complimentary discovery call. We'll discuss your aspirations, answer your questions, and explore if we're a good fit to embark on this journey together.
             </p>
             <CallToActionButton
-              href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763"
+              href="https://goodcoaching.as.me/?appointmentType=80123371"
               className="bg-white text-primary hover:bg-gray-100"
             >
               Schedule Your Free Discovery Call

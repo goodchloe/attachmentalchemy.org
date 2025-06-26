@@ -21,7 +21,7 @@ Sliding scale $4500 - $7000</CardTitle>
           
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">Ready to Transform Your Life?</h2>
           <p className="text-lg text-white mb-8">If Attachment Alchemy resonates with you, the next step is to book a complimentary Clarity Call. This is an opportunity to connect, discuss your needs, and see if this program is the right fit for your journey.</p>
-          <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-white text-primary hover:bg-gray-100">
+          <CallToActionButton href="https://goodcoaching.as.me/?appointmentType=80123371" className="bg-white text-primary hover:bg-gray-100">
             Book Your Free Clarity Call
           </CallToActionButton>
           <p className="mt-4 text-sm text-white">

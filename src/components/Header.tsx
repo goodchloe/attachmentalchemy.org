@@ -42,7 +42,7 @@ const Header: React.FC = () => {
           
           <div className="hidden md:block">
             <Button asChild variant="default" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <a href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" target="_blank" rel="noopener noreferrer">Book a Call</a>
+              <a href="https://goodcoaching.as.me/?appointmentType=80123371" target="_blank" rel="noopener noreferrer">Book a Call</a>
             </Button>
           </div>
 
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
               </NavLink>
             ))}
             <Button asChild variant="default" className="bg-primary hover:bg-primary/90 text-primary-foreground mt-4" onClick={() => setIsMobileMenuOpen(false)}>
-              <a href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" target="_blank" rel="noopener noreferrer">Book a Call</a>
+              <a href="https://goodcoaching.as.me/?appointmentType=80123371" target="_blank" rel="noopener noreferrer">Book a Call</a>
             </Button>
           </nav>
         </div>

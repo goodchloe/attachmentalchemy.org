@@ -28,7 +28,7 @@ const OfferingsPage: React.FC = () => {
             <div className="space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in" style={{
             animationDelay: '0.6s'
           }}>
-              <CallToActionButton href="https://goodcoaching.as.me/schedule/abc6511b/appointment/76158763/calendar/294178?appointmentTypeIds[]=76158763" className="bg-black text-white hover:bg-gray-800">
+              <CallToActionButton href="https://goodcoaching.as.me/?appointmentType=80123371" className="bg-black text-white hover:bg-gray-800">
                 Book a Discovery Call
               </CallToActionButton>
             </div>
