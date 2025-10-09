@@ -13,10 +13,10 @@ const InsideAttachmentAlchemySection: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="text-center bg-white/90">
             <CardHeader>
-              <CardTitle className="text-lg text-primary">Kickoff Immersion</CardTitle>
+              <CardTitle className="text-lg text-primary">Two In Person Immersions</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">September 4-7 - 4-day in-person retreat in Northern California. *Food & Lodging not included in course cost</p>
+              <p className="text-muted-foreground">Two 4-day in person retreats In Northern California.<br /><br />Kickoff Immersion: April 9-12<br />Final Immersion: July 18-21<br /> *Food & Lodging not included in course cost</p>
             </CardContent>
           </Card>
           <Card className="text-center bg-white/90">
