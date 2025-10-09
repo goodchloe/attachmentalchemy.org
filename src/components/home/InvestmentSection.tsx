@@ -13,8 +13,7 @@ const InvestmentSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-white">Investment</h2>
           <p className="text-xl text-white mb-6">This is a significant investment in your transformation.</p>
           <Card className="p-6 mb-8 bg-white">
-            <CardTitle className="text-primary mb-2 text-lg">Program Cost: 
-Sliding scale $4500 - $7000</CardTitle>
+            <CardTitle className="text-primary mb-2 text-lg">Program Cost: Sliding scale $7,000 - $10,000<br />Early Bird: $6,000</CardTitle>
             <CardDescription>Payment plans and partial scholarships available.</CardDescription>
             <p className="text-sm text-muted-foreground mt-2">*In person retreat food & lodging not included in course cost.</p>
           </Card>
