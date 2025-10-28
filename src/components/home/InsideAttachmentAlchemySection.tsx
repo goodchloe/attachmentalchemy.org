@@ -9,7 +9,7 @@ const InsideAttachmentAlchemySection: React.FC = () => {
     }}>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-white">Inside Attachment Alchemy</h2>
-        <p className="text-xl text-center mb-10 text-white">5 Months from March 11 - July 29 2025</p>
+        <p className="text-xl text-center mb-10 text-white">5 Months from March 11 - July 29 2026</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="text-center bg-white/90">
             <CardHeader>

@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
 5 Month Journey to Embodied Secure Attachment</h1>
           
           <p className="text-xl md:text-2xl mb-6 text-white/90 font-medium">
-            March 11 - July 29 2025
+            March 11 - July 29 2026
           </p>
           
           {/* Photos of facilitators */}
