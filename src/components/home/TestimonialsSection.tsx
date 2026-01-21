@@ -7,12 +7,21 @@ const TestimonialsSection: React.FC = () => {
   return (
     <SectionWrapper className="bg-secondary/30">
       <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">What participants are saying...</h2>
-      {/* YouTube Video */}
-      <div className="flex justify-center mb-10">
-        <div className="w-full max-w-md aspect-[9/16] rounded-lg overflow-hidden shadow-lg">
+      {/* YouTube Videos */}
+      <div className="flex flex-col md:flex-row justify-center gap-6 mb-10">
+        <div className="w-full max-w-xs aspect-[9/16] rounded-lg overflow-hidden shadow-lg">
           <iframe
             src="https://www.youtube.com/embed/x-T9smce_d8"
-            title="Participant Testimonial"
+            title="Participant Testimonial 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full"
+          />
+        </div>
+        <div className="w-full max-w-xs aspect-[9/16] rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.youtube.com/embed/H1vAhZ6O438"
+            title="Participant Testimonial 2"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="w-full h-full"
