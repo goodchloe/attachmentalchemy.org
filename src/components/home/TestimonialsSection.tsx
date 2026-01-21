@@ -24,18 +24,6 @@ const TestimonialsSection: React.FC = () => {
         <div className="flex flex-col items-center">
           <div className="w-full max-w-xs aspect-[9/16] rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.youtube.com/embed/H1vAhZ6O438"
-              title="Participant Testimonial - Verenice"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full"
-            />
-          </div>
-          <p className="mt-3 text-lg font-semibold text-foreground">Verenice</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="w-full max-w-xs aspect-[9/16] rounded-lg overflow-hidden shadow-lg">
-            <iframe
               src="https://www.youtube.com/embed/rZRBAK8776o"
               title="Participant Testimonial - Mark & Malia"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -44,6 +32,18 @@ const TestimonialsSection: React.FC = () => {
             />
           </div>
           <p className="mt-3 text-lg font-semibold text-foreground">Mark & Malia</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="w-full max-w-xs aspect-[9/16] rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/H1vAhZ6O438"
+              title="Participant Testimonial - Verenice"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+          <p className="mt-3 text-lg font-semibold text-foreground">Verenice</p>
         </div>
       </div>
 
