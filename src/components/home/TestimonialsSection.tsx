@@ -75,14 +75,6 @@ const TestimonialsSection: React.FC = () => {
         <Card className="text-center">
           <CardContent className="p-8">
             <p className="text-lg text-muted-foreground mb-4 italic">
-              "Having taught Tantra for 30 years, I know when a container is pristinely held and was impressed with how Spencer built and held it."
-            </p>
-            <p className="font-semibold text-primary">- E.R.</p>
-          </CardContent>
-        </Card>
-        <Card className="text-center">
-          <CardContent className="p-8">
-            <p className="text-lg text-muted-foreground mb-4 italic">
               "I felt so much trust in Spencer's facilitation that I was able to surrender and allow the container to truly hold me."
             </p>
             <p className="font-semibold text-primary">- H.R.</p>
