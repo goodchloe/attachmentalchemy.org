@@ -67,7 +67,7 @@ const TestimonialsSection: React.FC = () => {
         <Card className="text-center">
           <CardContent className="p-8">
             <p className="text-lg text-muted-foreground mb-4 italic">
-              "I can honestly say I could have paid 10x what she charges and it still would have been worth it."
+              "I can honestly say I could have paid 10x what they charge and it still would have been worth it."
             </p>
             <p className="font-semibold text-primary">- C.S., CEO Tech Startup</p>
           </CardContent>
