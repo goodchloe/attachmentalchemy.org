@@ -11,20 +11,29 @@ const InsideAttachmentAlchemySection: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-white">Inside Attachment Alchemy</h2>
         <p className="text-xl text-center mb-10 text-white">5 Months from March 11 - July 29 2026</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <Card className="text-center bg-white/90">
-            <CardHeader>
+          <Card className="bg-white/90">
+            <CardHeader className="text-center">
               <CardTitle className="text-lg text-primary">Three In Person Immersions</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">Two 4-day in person retreats & One Half Day Immersion in Northern California<br /><br />Half Day Kickoff: March 15th 3-7pm PT (online or in person)<br />Kickoff Immersion: April 9-12<br />Final Immersion: July 18-21<br /><br />*Food & Lodging not included in course cost</p>
+              <p className="text-muted-foreground text-center mb-3">Two 4-day in person retreats & One Half Day Immersion in Northern California</p>
+              <ul className="text-muted-foreground list-disc pl-5 space-y-1 text-left">
+                <li>Half Day Kickoff: March 15th 3-7pm PT (online or in person)</li>
+                <li>Kickoff Immersion: April 9-12</li>
+                <li>Final Immersion: July 18-21</li>
+              </ul>
+              <p className="text-muted-foreground text-center mt-3 text-sm">*Food & Lodging not included in course cost</p>
             </CardContent>
           </Card>
-          <Card className="text-center bg-white/90">
-            <CardHeader>
+          <Card className="bg-white/90">
+            <CardHeader className="text-center">
               <CardTitle className="text-lg text-primary">1:1 Coaching Sessions</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">One 1:1 Coaching session<br />Two Group Coaching Sessions</p>
+              <ul className="text-muted-foreground list-disc pl-5 space-y-1 text-left">
+                <li>One 1:1 Coaching session</li>
+                <li>Two Group Coaching Sessions</li>
+              </ul>
             </CardContent>
           </Card>
           <Card className="text-center bg-white/90">
