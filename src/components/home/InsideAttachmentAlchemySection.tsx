@@ -16,7 +16,7 @@ const InsideAttachmentAlchemySection: React.FC = () => {
               <CardTitle className="text-lg text-primary">Three In Person Immersions</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">Half Day Kickoff Hybrid Online & In Person Immersion: March 15th 3-7pm PT<br /><br />Two 4-day in person retreats In Northern California.<br /><br />Kickoff Immersion: April 9-12<br />Final Immersion: July 18-21<br /><br /> *Food & Lodging not included in course cost</p>
+              <p className="text-muted-foreground">Two 4-day in person retreats & One Half Day Immersion in Northern California<br /><br />Half Day Kickoff: March 15th 3-7pm PT (online or in person)<br />Kickoff Immersion: April 9-12<br />Final Immersion: July 18-21<br /><br />*Food & Lodging not included in course cost</p>
             </CardContent>
           </Card>
           <Card className="text-center bg-white/90">
