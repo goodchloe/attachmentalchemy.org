@@ -12,7 +12,7 @@ const CoachingPage: React.FC = () => {
         <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center text-center overflow-hidden">
           <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Healing hands and nature" className="absolute inset-0 w-full h-full object-cover filter brightness-50" />
           <div className="relative z-10 p-8 max-w-4xl mx-auto text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Attachment Somatic Coaching</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Attachment Repair Somatic Coaching</h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
               Deep, personalized somatic healing to help you rewire your nervous system, feel safe in your body, and transform your life from the inside out.
             </p>
