@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
             March 11 - July 29 2026
           </p>
           <p className="text-lg md:text-xl mb-6 text-white/80">
-            We are currently full. You can join the waitlist for the next cohort in 2027.
+            We are currently full. You can join the waitlist for the next cohort in 2027 by signing up for our email list in the pop-up window.
           </p>
           
           {/* Photos of facilitators */}
