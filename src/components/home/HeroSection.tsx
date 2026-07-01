@@ -12,11 +12,8 @@ const HeroSection: React.FC = () => {
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight animate-fade-in">Attachment Alchemy: 
 5 Month Journey to Embodied Secure Attachment</h1>
           
-          <p className="text-xl md:text-2xl mb-2 text-white/90 font-medium">
-            March 11 - July 29 2026
-          </p>
-          <p className="text-lg md:text-xl mb-6 text-white/80">
-            We are currently full. You can join the waitlist for the next cohort in 2027 by signing up for our email list in the pop-up window.
+          <p className="text-xl md:text-2xl mb-6 text-white/90 font-medium">
+            January 13 - June 16, 2027
           </p>
           
           {/* Photos of facilitators */}
