@@ -1,7 +1,8 @@
-
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
+import chloePhoto from '@/assets/Clo_11.jpg.asset.json';
+
 
 const HeroSection: React.FC = () => {
   return (
