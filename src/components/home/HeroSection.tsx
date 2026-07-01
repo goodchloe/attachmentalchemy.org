@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
-import chloePhoto from '@/assets/Clo_11.jpg.asset.json';
+import chloePhoto from '@/assets/Clo_11.jpg';
 import heroBg from '@/assets/hero-watercolor.jpg';
 
 
@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
           <div className="flex justify-center items-center gap-6 mb-6">
             <div className="flex flex-col items-center">
               <img 
-                src={chloePhoto.url}
+                src={chloePhoto}
                 alt="Chloe Good" 
                 className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-lg"
               />
