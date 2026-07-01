@@ -1,11 +1,20 @@
 import React from 'react';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent } from '@/components/ui/card';
+import heroBg from '@/assets/hero-watercolor.jpg';
 
 const OneDayImmersionSection: React.FC = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{ backgroundColor: '#F3E9D7' }}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      className="relative py-12 md:py-16 lg:py-20 animate-fade-in"
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="absolute inset-0 bg-white/30" />
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <p className="uppercase tracking-widest text-sm mb-3" style={{ color: '#B5643D' }}>
             A Full Day to Reset, Reconnect and Remember What Matters

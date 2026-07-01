@@ -20,6 +20,9 @@ const AttachmentAlchemyPage: React.FC = () => {
       {/* Hero Section with trees photo */}
       <HeroSection />
 
+      {/* One Day Immersion right under hero */}
+      <OneDayImmersionSection />
+
       {/* Add whitespace between hero and intro */}
       <div className="py-8"></div>
 
@@ -46,9 +49,6 @@ const AttachmentAlchemyPage: React.FC = () => {
       
       {/* Investment - Color Block Section */}
       <InvestmentSection />
-
-      {/* One Day Immersion */}
-      <OneDayImmersionSection />
     </>
   );
 };

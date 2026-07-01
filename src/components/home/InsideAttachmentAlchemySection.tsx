@@ -1,15 +1,22 @@
 
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import heroBg from '@/assets/hero-watercolor.jpg';
 
 const InsideAttachmentAlchemySection: React.FC = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
-      backgroundColor: '#B5643D'
-    }}>
-      <div className="w-full px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-white">Inside Attachment Alchemy</h2>
-        <p className="text-xl text-center mb-10 text-white">5 Months from January 13 - June 16, 2027</p>
+    <section
+      className="relative py-12 md:py-16 lg:py-20 animate-fade-in"
+      style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <div className="absolute inset-0 bg-white/30" />
+      <div className="relative w-full px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4" style={{ color: '#3A4A2E' }}>Inside Attachment Alchemy</h2>
+        <p className="text-xl text-center mb-10" style={{ color: '#3A4A2E' }}>5 Months from January 13 - June 16, 2027</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="bg-white/90">
             <CardHeader className="text-center">

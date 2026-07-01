@@ -5,7 +5,7 @@ import { CheckCircle } from 'lucide-react';
 const WhoIsThisForSection: React.FC = () => {
   return (
     <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
-      backgroundColor: '#D4B5A0'
+      backgroundColor: '#C9A24B'
     }}>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">

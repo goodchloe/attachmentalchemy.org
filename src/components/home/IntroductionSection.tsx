@@ -4,7 +4,7 @@ import React from 'react';
 const IntroductionSection: React.FC = () => {
   return (
     <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
-      backgroundColor: '#8FB5A3'
+      backgroundColor: '#5A6B4A'
     }}>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center text-white">
