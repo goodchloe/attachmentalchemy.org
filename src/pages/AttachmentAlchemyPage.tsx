@@ -23,9 +23,6 @@ const AttachmentAlchemyPage: React.FC = () => {
       {/* One Day Immersion right under hero */}
       <OneDayImmersionSection />
 
-      {/* Add whitespace between hero and intro */}
-      <div className="py-8"></div>
-
       {/* Introduction - Color Block Section */}
       <IntroductionSection />
 
