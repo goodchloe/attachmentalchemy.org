@@ -2,18 +2,19 @@ import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import chloePhoto from '@/assets/Clo_11.jpg.asset.json';
+import heroBg from '@/assets/hero-watercolor.jpg';
 
 
 const HeroSection: React.FC = () => {
   return (
     <SectionWrapper className="!py-0">
       <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center text-center rounded-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Forest trees reaching toward the sky" className="absolute inset-0 w-full h-full object-cover filter brightness-50" />
-        <div className="relative z-10 p-8 max-w-4xl mx-auto text-white">
+        <img src={heroBg} alt="Watercolor mountains in earthy tones" className="absolute inset-0 w-full h-full object-cover" />
+        <div className="relative z-10 p-8 max-w-4xl mx-auto" style={{ color: '#3A4A2E' }}>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight animate-fade-in">Attachment Alchemy: 
 5 Month Journey to Embodied Secure Attachment</h1>
           
-          <p className="text-xl md:text-2xl mb-6 text-white/90 font-medium">
+          <p className="font-serif text-xl md:text-2xl mb-6 font-medium" style={{ color: '#B5643D' }}>
             January 13 - June 16, 2027
           </p>
           
@@ -35,12 +36,12 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
           
-          <p className="text-lg md:text-xl mb-8 text-white/90">
+          <p className="text-lg md:text-xl mb-8" style={{ color: '#3A4A2E' }}>
             Guided by Chloe Good & Spencer Jacobson
           </p>
           
           <div className="mt-8">
-            <CallToActionButton href="https://goodcoaching.as.me/?appointmentType=80123371" className="bg-white text-primary hover:bg-gray-100" size="lg">
+            <CallToActionButton href="https://goodcoaching.as.me/?appointmentType=80123371" className="text-white hover:opacity-90" style={{ backgroundColor: '#B5643D' }} size="lg">
               Book a Clarity Call
             </CallToActionButton>
           </div>
