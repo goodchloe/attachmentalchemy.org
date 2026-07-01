@@ -5,7 +5,7 @@ import { CheckCircle } from 'lucide-react';
 
 const WhatYoullDiscoverSection: React.FC = () => {
   return (
-    <SectionWrapper className="bg-secondary/30">
+    <SectionWrapper style={{ backgroundColor: "#F3E9D7" }}>
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">What You'll Discover</h2>
         <div className="space-y-6 text-lg text-muted-foreground">
