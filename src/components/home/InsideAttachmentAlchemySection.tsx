@@ -5,15 +5,7 @@ import heroBg from '@/assets/hero-watercolor.jpg';
 
 const InsideAttachmentAlchemySection: React.FC = () => {
   return (
-    <section
-      className="relative py-12 md:py-16 lg:py-20 animate-fade-in"
-      style={{
-        backgroundImage: `url(${heroBg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div className="absolute inset-0 bg-white/30" />
+    <section className="relative py-12 md:py-16 lg:py-20 animate-fade-in bg-transparent">
       <div className="relative w-full px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4" style={{ color: '#3A4A2E' }}>Inside Attachment Alchemy</h2>
         <p className="text-xl text-center mb-10" style={{ color: '#3A4A2E' }}>5 Months from January 13 - June 16, 2027</p>

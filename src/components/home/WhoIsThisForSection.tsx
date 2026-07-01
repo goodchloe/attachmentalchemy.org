@@ -4,13 +4,11 @@ import { CheckCircle } from 'lucide-react';
 
 const WhoIsThisForSection: React.FC = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
-      backgroundColor: '#C9A24B'
-    }}>
+    <section className="py-12 md:py-16 lg:py-20 animate-fade-in bg-transparent">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-white">Who is this for?</h2>
-          <div className="grid md:grid-cols-1 gap-6 text-lg text-white">
+          <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10" style={{ color: '#3A4A2E' }}>Who is this for?</h2>
+          <div className="grid md:grid-cols-1 gap-6 text-lg" style={{ color: '#3A4A2E' }}>
             <div className="flex items-start space-x-3">
               <CheckCircle className="h-6 w-6 text-white flex-shrink-0 mt-1" />
               <p>You've done a lot of work on yourself but you keep running into the same pattern that you can't seem to overcome.</p>
