@@ -6,7 +6,7 @@ import { Card, CardTitle, CardDescription } from '@/components/ui/card';
 const InvestmentSection: React.FC = () => {
   return (
     <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
-      backgroundColor: '#5A6B4A'
+      backgroundColor: '#3A4A2E'
     }}>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
