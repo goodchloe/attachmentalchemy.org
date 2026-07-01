@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 
 const TestimonialsSection: React.FC = () => {
   return (
-    <SectionWrapper className="bg-secondary/30">
+    <SectionWrapper style={{ backgroundColor: "#F3E9D7" }}>
       <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">What participants are saying...</h2>
       {/* YouTube Videos */}
       <div className="flex flex-col md:flex-row justify-center gap-12 mb-10">

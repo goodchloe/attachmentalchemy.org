@@ -5,7 +5,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 
 const MeetFacilitatorsSection: React.FC = () => {
   return (
-    <SectionWrapper className="bg-secondary/30">
+    <SectionWrapper style={{ backgroundColor: "#F3E9D7" }}>
       <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">Meet Your Facilitators</h2>
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         <Card className="text-center">
