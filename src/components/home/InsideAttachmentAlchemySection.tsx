@@ -5,11 +5,11 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 const InsideAttachmentAlchemySection: React.FC = () => {
   return (
     <section className="py-12 md:py-16 lg:py-20 animate-fade-in" style={{
-      backgroundColor: '#E07A5F'
+      backgroundColor: '#B5643D'
     }}>
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4 text-white">Inside Attachment Alchemy</h2>
-        <p className="text-xl text-center mb-10 text-white">5 Months from March 11 - July 29 2026</p>
+        <p className="text-xl text-center mb-10 text-white">5 Months from January 13 - June 16, 2027</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="bg-white/90">
             <CardHeader className="text-center">
