@@ -10,6 +10,7 @@ import TestimonialsSection from '@/components/home/TestimonialsSection';
 import InsideAttachmentAlchemySection from '@/components/home/InsideAttachmentAlchemySection';
 import MeetFacilitatorsSection from '@/components/home/MeetFacilitatorsSection';
 import InvestmentSection from '@/components/home/InvestmentSection';
+import OneDayImmersionSection from '@/components/home/OneDayImmersionSection';
 
 const AttachmentAlchemyPage: React.FC = () => {
   return (
@@ -45,6 +46,9 @@ const AttachmentAlchemyPage: React.FC = () => {
       
       {/* Investment - Color Block Section */}
       <InvestmentSection />
+
+      {/* One Day Immersion */}
+      <OneDayImmersionSection />
     </>
   );
 };
