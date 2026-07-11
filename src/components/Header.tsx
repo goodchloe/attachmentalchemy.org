@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'; // Assuming you have a shadcn B
 
 const navItems = [
   { name: 'Attachment Alchemy', path: '/' },
+  { name: 'Events & Programs', path: '/events' },
   { name: 'About Chloe', path: '/about' },
   { name: 'Offerings', path: '/offerings' },
   { name: 'Coaching', path: '/coaching' },
