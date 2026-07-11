@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import AttachmentAlchemyPage from "./pages/AttachmentAlchemyPage";
 import OfferingsPage from "./pages/OfferingsPage";
+import EventsPage from "./pages/EventsPage";
 import CoachingPage from "./pages/CoachingPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
