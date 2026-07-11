@@ -29,6 +29,7 @@ const App = () => (
           <Route path="/" element={<Layout><AttachmentAlchemyPage /></Layout>} />
           <Route path="/about" element={<Layout><AboutPage /></Layout>} />
           <Route path="/offerings" element={<Layout><OfferingsPage /></Layout>} />
+          <Route path="/events" element={<Layout><EventsPage /></Layout>} />
           <Route path="/coaching" element={<Layout><CoachingPage /></Layout>} />
           <Route path="/contact" element={<Layout><ContactPage /></Layout>} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
