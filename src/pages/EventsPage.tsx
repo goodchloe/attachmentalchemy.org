@@ -2,7 +2,7 @@ import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Calendar, MapPin, ArrowRight } from 'lucide-react';
+import { MapPin, ArrowRight } from 'lucide-react';
 
 const EventsPage: React.FC = () => {
   return (
@@ -35,7 +35,7 @@ const EventsPage: React.FC = () => {
                 <div className="md:w-2/3">
                   <CardHeader>
                     <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
-                      Berkeley, CA
+                      Berkeley, CA — Saturday, September 26th, 2026
                     </CardTitle>
                     <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
                       An Introduction to the 5-Month Journey to Embodied Secure Attachment
@@ -43,11 +43,8 @@ const EventsPage: React.FC = () => {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="flex items-start space-x-3">
-                      <Calendar className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
-                      <div>
-                        <p className="font-semibold" style={{ color: '#3A4A2E' }}>Saturday, September 26th, 2026</p>
-                        <p className="text-muted-foreground">Berkeley, California</p>
-                      </div>
+                      <MapPin className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
+                      <p className="text-muted-foreground">Berkeley, California</p>
                     </div>
                     <div className="pt-4">
                       <CallToActionButton
@@ -71,7 +68,7 @@ const EventsPage: React.FC = () => {
                 <div className="md:w-2/3">
                   <CardHeader>
                     <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
-                      Boulder, CO
+                      Boulder, CO — Sunday, October 18th, 2026
                     </CardTitle>
                     <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
                       An Introduction to the 5-Month Journey to Embodied Secure Attachment
@@ -79,11 +76,8 @@ const EventsPage: React.FC = () => {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="flex items-start space-x-3">
-                      <Calendar className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
-                      <div>
-                        <p className="font-semibold" style={{ color: '#3A4A2E' }}>Sunday, October 18th, 2026</p>
-                        <p className="text-muted-foreground">Boulder, Colorado</p>
-                      </div>
+                      <MapPin className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
+                      <p className="text-muted-foreground">Boulder, Colorado</p>
                     </div>
                     <div className="pt-4">
                       <CallToActionButton
@@ -107,7 +101,7 @@ const EventsPage: React.FC = () => {
                 <div className="md:w-2/3">
                   <CardHeader>
                     <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
-                      Berkeley, CA
+                      Berkeley, CA — Saturday, December 12th, 2026
                     </CardTitle>
                     <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
                       An Introduction to the 5-Month Journey to Embodied Secure Attachment
@@ -115,11 +109,8 @@ const EventsPage: React.FC = () => {
                   </CardHeader>
                   <CardContent className="space-y-4">
                     <div className="flex items-start space-x-3">
-                      <Calendar className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
-                      <div>
-                        <p className="font-semibold" style={{ color: '#3A4A2E' }}>Saturday, December 12th, 2026</p>
-                        <p className="text-muted-foreground">Berkeley, California</p>
-                      </div>
+                      <MapPin className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
+                      <p className="text-muted-foreground">Berkeley, California</p>
                     </div>
                     <div className="pt-4">
                       <CallToActionButton
