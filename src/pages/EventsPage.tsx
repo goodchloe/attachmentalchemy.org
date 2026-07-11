@@ -22,51 +22,122 @@ const EventsPage: React.FC = () => {
         </div>
       </SectionWrapper>
 
-      {/* One Day Immersion */}
+      {/* One Day Immersions */}
       <SectionWrapper className="bg-transparent">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
-            <div className="md:flex">
-              <div className="md:w-2/3">
-                <CardHeader>
-                  <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
-                    One Day Immersion — Attachment Alchemy
-                  </CardTitle>
-                  <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
-                    An Introduction to the 5-Month Journey to Embodied Secure Attachment
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
-                    <div>
-                      <p className="font-semibold" style={{ color: '#3A4A2E' }}>Boulder, CO</p>
-                      <p className="text-muted-foreground">Sunday, October 18th</p>
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-center mb-10" style={{ color: '#3A4A2E' }}>
+            One Day Immersions — Attachment Alchemy
+          </h2>
+
+          <div className="space-y-8">
+            <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
+              <div className="md:flex">
+                <div className="md:w-2/3">
+                  <CardHeader>
+                    <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
+                      Berkeley, CA
+                    </CardTitle>
+                    <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
+                      An Introduction to the 5-Month Journey to Embodied Secure Attachment
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <Calendar className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
+                      <div>
+                        <p className="font-semibold" style={{ color: '#3A4A2E' }}>Saturday, September 26th, 2026</p>
+                        <p className="text-muted-foreground">Berkeley, California</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <MapPin className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
-                    <div>
-                      <p className="font-semibold" style={{ color: '#3A4A2E' }}>Berkeley, CA</p>
-                      <p className="text-muted-foreground">Saturday, September 26th & Saturday, December 12th</p>
+                    <div className="pt-4">
+                      <CallToActionButton
+                        href="https://goodcoaching.as.me/?appointmentType=80123371"
+                        className="text-white hover:opacity-90"
+                        style={{ backgroundColor: '#B5643D' }}
+                      >
+                        Register for Berkeley Immersion
+                      </CallToActionButton>
                     </div>
-                  </div>
-                  <div className="pt-4">
-                    <CallToActionButton
-                      href="https://goodcoaching.as.me/?appointmentType=80123371"
-                      className="text-white hover:opacity-90"
-                      style={{ backgroundColor: '#B5643D' }}
-                    >
-                      Register for One Day Immersion
-                    </CallToActionButton>
-                  </div>
-                </CardContent>
+                  </CardContent>
+                </div>
+                <div className="md:w-1/3 bg-gradient-to-br from-[#C9A24B]/20 to-[#4A5A3A]/20 flex items-center justify-center p-8">
+                  <MapPin className="h-24 w-24" style={{ color: '#4A5A3A' }} />
+                </div>
               </div>
-              <div className="md:w-1/3 bg-gradient-to-br from-[#C9A24B]/20 to-[#4A5A3A]/20 flex items-center justify-center p-8">
-                <Calendar className="h-24 w-24" style={{ color: '#4A5A3A' }} />
+            </Card>
+
+            <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
+              <div className="md:flex">
+                <div className="md:w-2/3">
+                  <CardHeader>
+                    <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
+                      Boulder, CO
+                    </CardTitle>
+                    <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
+                      An Introduction to the 5-Month Journey to Embodied Secure Attachment
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <Calendar className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
+                      <div>
+                        <p className="font-semibold" style={{ color: '#3A4A2E' }}>Sunday, October 18th, 2026</p>
+                        <p className="text-muted-foreground">Boulder, Colorado</p>
+                      </div>
+                    </div>
+                    <div className="pt-4">
+                      <CallToActionButton
+                        href="https://goodcoaching.as.me/?appointmentType=80123371"
+                        className="text-white hover:opacity-90"
+                        style={{ backgroundColor: '#B5643D' }}
+                      >
+                        Register for Boulder Immersion
+                      </CallToActionButton>
+                    </div>
+                  </CardContent>
+                </div>
+                <div className="md:w-1/3 bg-gradient-to-br from-[#C9A24B]/20 to-[#4A5A3A]/20 flex items-center justify-center p-8">
+                  <MapPin className="h-24 w-24" style={{ color: '#4A5A3A' }} />
+                </div>
               </div>
-            </div>
-          </Card>
+            </Card>
+
+            <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
+              <div className="md:flex">
+                <div className="md:w-2/3">
+                  <CardHeader>
+                    <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
+                      Berkeley, CA
+                    </CardTitle>
+                    <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
+                      An Introduction to the 5-Month Journey to Embodied Secure Attachment
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="flex items-start space-x-3">
+                      <Calendar className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
+                      <div>
+                        <p className="font-semibold" style={{ color: '#3A4A2E' }}>Saturday, December 12th, 2026</p>
+                        <p className="text-muted-foreground">Berkeley, California</p>
+                      </div>
+                    </div>
+                    <div className="pt-4">
+                      <CallToActionButton
+                        href="https://goodcoaching.as.me/?appointmentType=80123371"
+                        className="text-white hover:opacity-90"
+                        style={{ backgroundColor: '#B5643D' }}
+                      >
+                        Register for Berkeley Immersion
+                      </CallToActionButton>
+                    </div>
+                  </CardContent>
+                </div>
+                <div className="md:w-1/3 bg-gradient-to-br from-[#C9A24B]/20 to-[#4A5A3A]/20 flex items-center justify-center p-8">
+                  <MapPin className="h-24 w-24" style={{ color: '#4A5A3A' }} />
+                </div>
+              </div>
+            </Card>
+          </div>
         </div>
       </SectionWrapper>
 
