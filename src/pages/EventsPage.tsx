@@ -81,7 +81,7 @@ const EventsPage: React.FC = () => {
                     </div>
                     <div className="pt-4">
                       <CallToActionButton
-                        href="https://partiful.com/e/XGx6FM5UGjzkCnKRZMGn"
+                        href="https://buytickets.at/attachmentalchemy1/2302212"
                         className="text-white hover:opacity-90"
                         style={{ backgroundColor: '#B5643D' }}
                       >
