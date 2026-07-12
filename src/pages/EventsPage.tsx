@@ -32,7 +32,7 @@ const EventsPage: React.FC = () => {
           <div className="space-y-8">
             <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
               <div className="md:flex">
-                <div className="md:w-2/3">
+                <div className="md:w-full">
                   <CardHeader>
                     <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
                       Berkeley, CA — Saturday, September 26th, 2026
@@ -57,15 +57,12 @@ const EventsPage: React.FC = () => {
                     </div>
                   </CardContent>
                 </div>
-                <div className="md:w-1/3 bg-gradient-to-br from-[#C9A24B]/20 to-[#4A5A3A]/20 flex items-center justify-center p-8">
-                  <MapPin className="h-24 w-24" style={{ color: '#4A5A3A' }} />
-                </div>
               </div>
             </Card>
 
             <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
               <div className="md:flex">
-                <div className="md:w-2/3">
+                <div className="md:w-full">
                   <CardHeader>
                     <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
                       Boulder, CO — Sunday, October 18th, 2026
@@ -90,15 +87,12 @@ const EventsPage: React.FC = () => {
                     </div>
                   </CardContent>
                 </div>
-                <div className="md:w-1/3 bg-gradient-to-br from-[#C9A24B]/20 to-[#4A5A3A]/20 flex items-center justify-center p-8">
-                  <MapPin className="h-24 w-24" style={{ color: '#4A5A3A' }} />
-                </div>
               </div>
             </Card>
 
             <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
               <div className="md:flex">
-                <div className="md:w-2/3">
+                <div className="md:w-full">
                   <CardHeader>
                     <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
                       Berkeley, CA — Saturday, December 12th, 2026
@@ -122,9 +116,6 @@ const EventsPage: React.FC = () => {
                       </CallToActionButton>
                     </div>
                   </CardContent>
-                </div>
-                <div className="md:w-1/3 bg-gradient-to-br from-[#C9A24B]/20 to-[#4A5A3A]/20 flex items-center justify-center p-8">
-                  <MapPin className="h-24 w-24" style={{ color: '#4A5A3A' }} />
                 </div>
               </div>
             </Card>
