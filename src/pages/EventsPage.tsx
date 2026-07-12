@@ -2,7 +2,7 @@ import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { MapPin, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const EventsPage: React.FC = () => {
   return (
@@ -24,8 +24,11 @@ const EventsPage: React.FC = () => {
 
       {/* One Day Immersions */}
       <SectionWrapper className="bg-transparent">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-center mb-10" style={{ color: '#3A4A2E' }}>
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="font-serif text-xl md:text-2xl mb-4" style={{ color: '#B5643D' }}>
+            An Introduction to the 5 Month Journey to Embodied Secure Attachment
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-10" style={{ color: '#3A4A2E' }}>
             One Day Immersions — Attachment Alchemy
           </h2>
 
@@ -33,7 +36,7 @@ const EventsPage: React.FC = () => {
             <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
               <div className="md:flex">
                 <div className="md:w-full">
-                  <CardHeader>
+                  <CardHeader className="text-center">
                     <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
                       Berkeley, CA — Saturday, September 26th, 2026
                     </CardTitle>
@@ -41,11 +44,8 @@ const EventsPage: React.FC = () => {
                       An Introduction to the 5-Month Journey to Embodied Secure Attachment
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-start space-x-3">
-                      <MapPin className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
-                      <p className="text-muted-foreground">Berkeley, California</p>
-                    </div>
+                  <CardContent className="space-y-4 text-center">
+                    <p className="text-muted-foreground">Berkeley, California</p>
                     <div className="pt-4">
                       <CallToActionButton
                         href="https://buytickets.at/attachmentalchemy1/2291535"
@@ -63,7 +63,7 @@ const EventsPage: React.FC = () => {
             <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
               <div className="md:flex">
                 <div className="md:w-full">
-                  <CardHeader>
+                  <CardHeader className="text-center">
                     <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
                       Boulder, CO — Sunday, October 18th, 2026
                     </CardTitle>
@@ -71,11 +71,8 @@ const EventsPage: React.FC = () => {
                       An Introduction to the 5-Month Journey to Embodied Secure Attachment
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-start space-x-3">
-                      <MapPin className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
-                      <p className="text-muted-foreground">Boulder, Colorado</p>
-                    </div>
+                  <CardContent className="space-y-4 text-center">
+                    <p className="text-muted-foreground">Boulder, Colorado</p>
                     <div className="pt-4">
                       <CallToActionButton
                         href="https://buytickets.at/attachmentalchemy1/2302212"
@@ -93,7 +90,7 @@ const EventsPage: React.FC = () => {
             <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
               <div className="md:flex">
                 <div className="md:w-full">
-                  <CardHeader>
+                  <CardHeader className="text-center">
                     <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
                       Berkeley, CA — Saturday, December 12th, 2026
                     </CardTitle>
@@ -101,11 +98,8 @@ const EventsPage: React.FC = () => {
                       An Introduction to the 5-Month Journey to Embodied Secure Attachment
                     </CardDescription>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-start space-x-3">
-                      <MapPin className="h-5 w-5 mt-1 flex-shrink-0" style={{ color: '#B5643D' }} />
-                      <p className="text-muted-foreground">Berkeley, California</p>
-                    </div>
+                  <CardContent className="space-y-4 text-center">
+                    <p className="text-muted-foreground">Berkeley, California</p>
                     <div className="pt-4">
                       <CallToActionButton
                         href="https://goodcoaching.as.me/?appointmentType=80123371"
@@ -129,7 +123,7 @@ const EventsPage: React.FC = () => {
           <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
             <div className="md:flex">
               <div className="md:w-2/3">
-                <CardHeader>
+                <CardHeader className="text-center md:text-left">
                   <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
                     5-Month Journey to Embodied Secure Attachment
                   </CardTitle>
@@ -137,7 +131,7 @@ const EventsPage: React.FC = () => {
                     Attachment Alchemy
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-4 text-center md:text-left">
                   <p className="text-muted-foreground text-lg">
                     A five-month transformational journey combining somatic healing, attachment repair, nervous system regulation, and community support.
                     <br />
