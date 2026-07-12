@@ -131,8 +131,8 @@ const EventsPage: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
             <div className="md:flex">
-              <div className="md:w-2/3">
-                <CardHeader className="text-center md:text-left">
+              <div className="md:w-full">
+                <CardHeader className="text-center">
                   <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
                     5-Month Journey to Embodied Secure Attachment
                   </CardTitle>
@@ -140,7 +140,7 @@ const EventsPage: React.FC = () => {
                     Attachment Alchemy
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4 text-center md:text-left">
+                <CardContent className="space-y-4 text-center">
                   <p className="text-muted-foreground text-lg">
                     A five-month transformational journey combining somatic healing, attachment repair, nervous system regulation, and community support.
                     <br />
@@ -156,9 +156,6 @@ const EventsPage: React.FC = () => {
                     </CallToActionButton>
                   </div>
                 </CardContent>
-              </div>
-              <div className="md:w-1/3 bg-gradient-to-br from-[#4A5A3A]/20 to-[#B5643D]/20 flex items-center justify-center p-8">
-                <ArrowRight className="h-24 w-24" style={{ color: '#B5643D' }} />
               </div>
             </div>
           </Card>
