@@ -3,6 +3,7 @@ import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
+import immersionPhoto from '@/assets/260207_AR509571_020726_AttachmentAlchemy.jpg.asset.json';
 
 const EventsPage: React.FC = () => {
   return (
@@ -28,9 +29,17 @@ const EventsPage: React.FC = () => {
           <p className="font-serif text-xl md:text-2xl mb-4" style={{ color: '#B5643D' }}>
             An Introduction to the 5 Month Journey to Embodied Secure Attachment
           </p>
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-10" style={{ color: '#3A4A2E' }}>
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-6" style={{ color: '#3A4A2E' }}>
             One Day Immersions — Attachment Alchemy
           </h2>
+
+          <div className="max-w-3xl mx-auto mb-10 rounded-lg overflow-hidden shadow-lg">
+            <img
+              src={immersionPhoto.url}
+              alt="Two women connecting in an intimate group practice during an Attachment Alchemy immersion"
+              className="w-full h-auto object-cover"
+            />
+          </div>
 
           <div className="space-y-8">
             <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
