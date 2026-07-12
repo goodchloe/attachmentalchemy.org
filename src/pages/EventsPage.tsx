@@ -3,7 +3,7 @@ import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
-import immersionPhoto from '@/assets/260207_AR509498_020726_AttachmentAlchemy.jpg.asset.json';
+import immersionPhoto from '@/assets/Immersion_Group_Photo.jpg.asset.json';
 
 const EventsPage: React.FC = () => {
   return (
