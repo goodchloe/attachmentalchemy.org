@@ -16,11 +16,31 @@ const InsideAttachmentAlchemySection: React.FC = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground text-center mb-3">Two 4-day in person retreats & Two Half Day Immersions Online and in Northern California</p>
-              <ul className="text-muted-foreground text-left list-disc pl-5 space-y-1 mt-3">
-                <li>1 Day Kickoff Immersion — 10a-2:30p — January 23 - Online and in Person in N. California & Boulder</li>
-                <li>4 Day Immersion 1 — Feb 10-14 - Retreat Center in N. California</li>
-                <li>4 Day Immersion 2 — April 7-11 - Retreat Center in N. California</li>
-                <li>Closing Day Long Immersion — June 5th, 10a-2:30p - Online and in Person in N. California & Boulder</li>
+              <ul className="text-muted-foreground text-left list-disc pl-5 space-y-2 mt-3">
+                <li>
+                  1 Day Kickoff Immersion — January 23, 10a-2:30p
+                  <ul className="list-[circle] pl-5 mt-1 space-y-1">
+                    <li>Online and in Person in N. California & Boulder</li>
+                  </ul>
+                </li>
+                <li>
+                  4 Day Immersion 1 — Feb 10-14
+                  <ul className="list-[circle] pl-5 mt-1 space-y-1">
+                    <li>Retreat Center in N. California</li>
+                  </ul>
+                </li>
+                <li>
+                  4 Day Immersion 2 — April 7-11
+                  <ul className="list-[circle] pl-5 mt-1 space-y-1">
+                    <li>Retreat Center in N. California</li>
+                  </ul>
+                </li>
+                <li>
+                  Closing Day Long Immersion — June 5th, 10a-2:30p
+                  <ul className="list-[circle] pl-5 mt-1 space-y-1">
+                    <li>Online and in Person in N. California & Boulder</li>
+                  </ul>
+                </li>
               </ul>
               <p className="text-muted-foreground text-center mt-3 text-sm">*Food & Lodging not included in course cost</p>
             </CardContent>
