@@ -18,26 +18,30 @@ const InsideAttachmentAlchemySection: React.FC = () => {
               <p className="text-muted-foreground text-center mb-3">Two 4-day in person retreats & Two Half Day Immersions Online and in Northern California</p>
               <ul className="text-muted-foreground text-left list-disc pl-5 space-y-2 mt-3">
                 <li>
-                  1 Day Kickoff Immersion — January 23, 10a-2:30p
+                  1 Day Kickoff Immersion
                   <ul className="list-[circle] pl-5 mt-1 space-y-1">
+                    <li>January 23, 10a-2:30p</li>
                     <li>Online and in Person in N. California & Boulder</li>
                   </ul>
                 </li>
                 <li>
-                  4 Day Immersion 1 — Feb 10-14
+                  4 Day Immersion 1
                   <ul className="list-[circle] pl-5 mt-1 space-y-1">
+                    <li>Feb 10-14</li>
                     <li>Retreat Center in N. California</li>
                   </ul>
                 </li>
                 <li>
-                  4 Day Immersion 2 — April 7-11
+                  4 Day Immersion 2
                   <ul className="list-[circle] pl-5 mt-1 space-y-1">
+                    <li>April 7-11</li>
                     <li>Retreat Center in N. California</li>
                   </ul>
                 </li>
                 <li>
-                  Closing Day Long Immersion — June 5th, 10a-2:30p
+                  Closing Day Long Immersion
                   <ul className="list-[circle] pl-5 mt-1 space-y-1">
+                    <li>June 5th, 10a-2:30p</li>
                     <li>Online and in Person in N. California & Boulder</li>
                   </ul>
                 </li>
