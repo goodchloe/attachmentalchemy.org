@@ -73,7 +73,7 @@ const InsideAttachmentAlchemySection: React.FC = () => {
               <CardTitle className="text-lg text-primary">Peer Counseling Practice Partners</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">Deepen secure attachment and work through blocks together</p>
+              <p className="text-muted-foreground">Weekly practice with peers to deepen secure attachment and work through blocks together</p>
             </CardContent>
           </Card>
           <Card className="text-center bg-white/90">
