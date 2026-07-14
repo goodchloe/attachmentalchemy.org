@@ -8,7 +8,7 @@ const InsideAttachmentAlchemySection: React.FC = () => {
     <section className="relative py-12 md:py-16 lg:py-20 animate-fade-in bg-transparent">
       <div className="relative w-full px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4" style={{ color: '#3A4A2E' }}>Inside Attachment Alchemy</h2>
-        <p className="text-xl text-center mb-10" style={{ color: '#3A4A2E' }}>5 Months from January 19 - June 9, 2027</p>
+        <p className="text-xl text-center mb-10" style={{ color: '#3A4A2E' }}>5 Months from January 20 - June 5, 2027</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <Card className="bg-white/90">
             <CardHeader className="text-center">
@@ -16,6 +16,12 @@ const InsideAttachmentAlchemySection: React.FC = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground text-center mb-3">Two 4-day in person retreats & One Half Day Immersion in Northern California</p>
+              <ul className="text-muted-foreground text-left list-disc pl-5 space-y-1 mt-3">
+                <li>1 Day Immersion — 10a-2:30p — January 23</li>
+                <li>Immersion 1 — Feb 10-14</li>
+                <li>Immersion 2 — April 7-11</li>
+                <li>Closing Day Long Immersion — June 5th, 10a-2:30p</li>
+              </ul>
               <p className="text-muted-foreground text-center mt-3 text-sm">*Food & Lodging not included in course cost</p>
             </CardContent>
           </Card>
