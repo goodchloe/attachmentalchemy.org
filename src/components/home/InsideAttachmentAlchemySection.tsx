@@ -47,6 +47,7 @@ const InsideAttachmentAlchemySection: React.FC = () => {
                 </li>
               </ul>
               <p className="text-muted-foreground text-center mt-3 text-sm">*Food & Lodging not included in course cost</p>
+              <p className="text-muted-foreground text-center mt-1 text-sm">**Some dates subject to change with ample notice</p>
             </CardContent>
           </Card>
           <Card className="bg-white/90">
