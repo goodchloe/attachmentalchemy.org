@@ -110,7 +110,7 @@ const OfferingsPage: React.FC = () => {
           <div className="md:w-1/2">
             <CardHeader>
               <CardTitle className="text-3xl md:text-4xl text-primary">Attachment Alchemy</CardTitle>
-              <CardDescription className="text-lg">Your 4-Month Journey to Embodied Secure Attachment</CardDescription>
+              <CardDescription className="text-lg">Your 5-Month Journey to Embodied Secure Attachment</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="mb-6">
