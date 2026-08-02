@@ -36,7 +36,7 @@ const AboutPage: React.FC = () => {
               </div>
             </div>
             <p>
-              This realization, coupled with understanding Complex PTSD (C-PTSD), illuminated the power of somatic work. For me, "this is the gold" – the key to genuine, embodied healing that goes beyond talk. It's about feeling safe in your body, processing unfelt emotions, and connecting with an inner wisdom. My work has been featured in Forbes magazine. I earned my BA from Columbia University in the City of New York. This profound personal transformation ignited my passion to train in these modalities and guide others on their own paths to "embodied secure attachment" and aliveness.
+              This realization, coupled with understanding Complex PTSD (C-PTSD), illuminated the power of somatic work. For me, "this is the gold" – the key to genuine, embodied healing that goes beyond talk. It's about feeling safe in your body, processing unfelt emotions, and connecting with an inner wisdom. My work was featured in Forbes magazine. I earned my BA from Columbia University in the City of New York. This profound personal transformation ignited my passion to train in these modalities and guide others on their own paths to "embodied secure attachment" and aliveness.
             </p>
           </CardContent>
         </Card>
