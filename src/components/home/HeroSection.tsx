@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
           <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight" style={{ color: '#3A4A2E' }}>5 Month Journey to Embodied Secure Attachment</h2>
           
           <p className="font-serif text-xl md:text-2xl mb-6 font-medium" style={{ color: '#B5643D' }}>
-            January 20 - June 5, 2027
+            January 20 - May 26, 2027
           </p>
           
           {/* Photos of facilitators */}
