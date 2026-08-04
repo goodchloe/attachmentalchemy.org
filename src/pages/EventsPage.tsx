@@ -144,7 +144,7 @@ const EventsPage: React.FC = () => {
                   <p className="text-muted-foreground text-lg">
                     A five-month transformational journey combining somatic healing, attachment repair, nervous system regulation, and community support.
                     <br />
-                    January 20 - May 26, 2027.
+                    January 20 - June 6, 2027.
                   </p>
                   <div className="pt-4">
                     <CallToActionButton
