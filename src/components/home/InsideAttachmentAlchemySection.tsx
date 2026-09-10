@@ -39,7 +39,7 @@ const InsideAttachmentAlchemySection: React.FC = () => {
                   </ul>
                 </li>
                 <li>
-                  Closing Day Long Immersion
+                  1 Day Closing Immersion
                   <ul className="list-[circle] pl-5 mt-1 space-y-1">
                     <li>June 6th, 10a-2:30p</li>
                     <li>Online and in Person in N. California & Boulder</li>
