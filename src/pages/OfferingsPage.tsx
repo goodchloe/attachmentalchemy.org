@@ -42,7 +42,7 @@ const OfferingsPage: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-foreground">
             Hi, I'm Chloe. I've Been There.
           </h2>
-          <img src="/lovable-uploads/9d76db4c-e415-4080-9e67-67cca0b43cd5.png" alt="Chloe Good, smiling warmly" className="w-48 h-48 rounded-full mx-auto mb-6 object-cover shadow-lg" />
+          <img src="/images/chloe-portrait.png" alt="Chloe Good, smiling warmly" className="w-48 h-48 rounded-full mx-auto mb-6 object-cover shadow-lg" />
           <p className="text-lg text-muted-foreground mb-6">My journey through complex trauma and into profound healing has equipped me with may tools and a deep passion for guiding others towards their own "embodied secure attachment." I know what it's like to search for safety and aliveness, and I'm here to walk that path with you.</p>
           <CallToActionButton to="/about" variant="link" className="text-primary hover:text-primary/80">
             Learn More About My Journey
@@ -54,7 +54,7 @@ const OfferingsPage: React.FC = () => {
       <SectionWrapper className="bg-secondary/30">
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-center">
           <div>
-            <img src="/lovable-uploads/fea84654-055d-4e9f-9d35-bbe808d85cbc.png" alt="Woman in golden light holding a crystal ball" className="w-full h-80 object-cover rounded-lg shadow-lg" />
+            <img src="/images/golden-light-crystal-ball.png" alt="Woman in golden light holding a crystal ball" className="w-full h-80 object-cover rounded-lg shadow-lg" />
           </div>
           <div className="space-y-4">
             <h3 className="text-2xl font-semibold text-primary">Embracing Your Inner Light</h3>
@@ -95,7 +95,7 @@ const OfferingsPage: React.FC = () => {
             </p>
           </div>
           <div className="order-1 md:order-2">
-            <img src="/lovable-uploads/a010a657-62ee-4509-a3b2-0a585f505f8b.png" alt="Hands connecting in support" className="w-full h-80 object-cover rounded-lg shadow-lg" />
+            <img src="/images/hands-connecting.png" alt="Hands connecting in support" className="w-full h-80 object-cover rounded-lg shadow-lg" />
           </div>
         </div>
       </SectionWrapper>

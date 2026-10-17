@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
           <CardContent className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <div className="md:flex md:space-x-8 items-center">
               <img 
-                src="/lovable-uploads/9d76db4c-e415-4080-9e67-67cca0b43cd5.png" 
+                src="/images/chloe-portrait.png" 
                 alt="Chloe Good, smiling warmly"
                 className="w-full md:w-1/3 h-auto rounded-lg shadow-md mb-6 md:mb-0 object-cover aspect-[3/4]"
               />
@@ -60,7 +60,7 @@ const AboutPage: React.FC = () => {
                 </ul>
               </div>
               <img 
-                src="/lovable-uploads/1511494a-2ee4-45ca-b9cf-0596bceadf1a.png" 
+                src="/images/chloe-arms-outstretched.png" 
                 alt="Chloe Good with arms outstretched, exuding joy and openness, embodying aliveness"
                 className="w-full md:w-1/3 h-auto rounded-lg shadow-md object-cover"
               />

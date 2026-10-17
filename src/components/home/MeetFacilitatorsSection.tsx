@@ -10,7 +10,7 @@ const MeetFacilitatorsSection: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         <Card className="text-center">
           <CardHeader>
-            <img src="/lovable-uploads/9d76db4c-e415-4080-9e67-67cca0b43cd5.png" alt="Chloe Good, program facilitator" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <img src="/images/chloe-portrait.png" alt="Chloe Good, program facilitator" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
             <CardTitle className="text-2xl text-primary">Chloe Good</CardTitle>
             <CardDescription className="text-lg">Somatic Attachment Repair & Executive Coach</CardDescription>
           </CardHeader>
@@ -28,7 +28,7 @@ const MeetFacilitatorsSection: React.FC = () => {
         </Card>
         <Card className="text-center">
           <CardHeader>
-            <img src="/lovable-uploads/eb1444c1-90a6-4ce6-8c93-b289c40276fe.png" alt="Spencer Jacobson, Leadership Coach" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <img src="/images/spencer-jacobson.png" alt="Spencer Jacobson, Leadership Coach" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
             <CardTitle className="text-2xl text-primary">Spencer Jacobson</CardTitle>
             <CardDescription className="text-lg">Leadership Coach, Founder Dance Meets Tantra</CardDescription>
           </CardHeader>

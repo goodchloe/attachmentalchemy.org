@@ -1,0 +1,23 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && [ -d node_modules ] || npm ci --no-audit --no-fund"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm run build)",
+      "Bash(npm run dev)",
+      "Bash(npm run preview)",
+      "Bash(npm ci)",
+      "Bash(npm install)"
+    ]
+  }
+}

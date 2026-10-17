@@ -41,7 +41,7 @@ const CoachingPage: React.FC = () => {
       {/* Transformation Image Section */}
       <SectionWrapper>
         <div className="text-center max-w-4xl mx-auto">
-          <img src="/lovable-uploads/fc326a4a-0946-40f4-a81d-f8dbced3005f.png" alt="Woman holding a crystal ball in golden light" className="w-full max-w-2xl mx-auto h-96 object-cover rounded-lg shadow-xl mb-8" />
+          <img src="/images/coaching-crystal-ball.png" alt="Woman holding a crystal ball in golden light" className="w-full max-w-2xl mx-auto h-96 object-cover rounded-lg shadow-xl mb-8" />
           <h3 className="text-2xl font-semibold text-primary mb-4">Clarity Through Embodied Presence</h3>
           <p className="text-lg text-muted-foreground">
             When we cultivate safety in our nervous system and presence in our body, clarity naturally emerges. 

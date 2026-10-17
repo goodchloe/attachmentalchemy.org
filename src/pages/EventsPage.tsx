@@ -3,7 +3,6 @@ import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
-import immersionPhoto from '@/assets/Immersion_Group_Photo.jpg.asset.json';
 
 const EventsPage: React.FC = () => {
   return (
@@ -35,7 +34,7 @@ const EventsPage: React.FC = () => {
 
           <div className="max-w-3xl mx-auto mb-10 rounded-lg overflow-hidden shadow-lg">
             <img
-              src={immersionPhoto.url}
+              src="/images/immersion-group-photo.jpg"
               alt="Participants gathered in a circle during an Attachment Alchemy workshop"
               className="w-full h-auto object-cover"
             />

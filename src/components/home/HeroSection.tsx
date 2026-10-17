@@ -1,7 +1,7 @@
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
-import chloePhoto from '@/assets/Clo_11.jpg';
+import chloePhoto from '@/assets/chloe-hero.jpg';
 import heroBg from '@/assets/hero-watercolor.jpg';
 
 
@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
             </div>
             <div className="flex flex-col items-center">
               <img 
-                src="/lovable-uploads/eb1444c1-90a6-4ce6-8c93-b289c40276fe.png" 
+                src="/images/spencer-jacobson.png" 
                 alt="Spencer Jacobson" 
                 className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-lg"
               />
