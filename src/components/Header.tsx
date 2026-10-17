@@ -5,12 +5,8 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button'; // Assuming you have a shadcn Button
 
 const navItems = [
-  { name: 'Attachment Alchemy', path: '/' },
-  { name: 'Events & Programs', path: '/events' },
-  { name: 'About Chloe', path: '/about' },
-  { name: 'Offerings', path: '/offerings' },
-  { name: 'Coaching', path: '/coaching' },
-  { name: 'Contact', path: '/contact' },
+  { name: 'The Program', path: '/' },
+  { name: 'Events', path: '/events' },
 ];
 
 const Header: React.FC = () => {
@@ -21,7 +17,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="text-2xl font-serif font-bold text-primary hover:text-primary/80 transition-colors">
-            Chloe Good
+            Attachment Alchemy
           </Link>
 
           {/* Desktop Navigation */}
