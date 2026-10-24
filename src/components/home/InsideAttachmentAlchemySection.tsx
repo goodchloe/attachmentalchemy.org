@@ -56,7 +56,7 @@ const InsideAttachmentAlchemySection: React.FC = () => {
             </CardHeader>
             <CardContent>
               <ul className="text-muted-foreground list-disc pl-5 space-y-1 text-left">
-                <li>Two 1:1 Coaching Sessions with an Advanced Practitioner</li>
+                <li>One 1:1 Coaching Session with an Advanced Practitioner</li>
                 <li>Two Group Coaching Sessions with Chloe</li>
               </ul>
             </CardContent>
