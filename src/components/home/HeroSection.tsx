@@ -1,7 +1,6 @@
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
-import chloePhoto from '@/assets/chloe-hero.jpg';
 import heroBg from '@/assets/hero-watercolor.jpg';
 
 
@@ -18,22 +17,13 @@ const HeroSection: React.FC = () => {
             January 20 - June 9, 2027
           </p>
           
-          {/* Photos of facilitators */}
-          <div className="flex justify-center items-center gap-6 mb-6">
-            <div className="flex flex-col items-center">
-              <img 
-                src={chloePhoto}
-                alt="Chloe Good" 
-                className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-lg"
-              />
-            </div>
-            <div className="flex flex-col items-center">
-              <img 
-                src="/images/spencer-jacobson.png" 
-                alt="Spencer Jacobson" 
-                className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-lg"
-              />
-            </div>
+          {/* Photo of facilitators */}
+          <div className="flex justify-center mb-6">
+            <img
+              src="/images/chloe-and-spencer.jpg"
+              alt="Chloe Good and Spencer Jacobson smiling together outdoors"
+              className="w-64 md:w-80 aspect-[3/2] rounded-lg object-cover shadow-lg"
+            />
           </div>
           
           <p className="text-lg md:text-xl mb-8" style={{ color: '#3A4A2E' }}>
