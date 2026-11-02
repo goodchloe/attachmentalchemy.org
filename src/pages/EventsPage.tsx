@@ -22,6 +22,46 @@ const EventsPage: React.FC = () => {
         </div>
       </SectionWrapper>
 
+      {/* Online MasterClass */}
+      <SectionWrapper className="bg-transparent">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="font-serif text-xl md:text-2xl mb-4" style={{ color: '#B5643D' }}>
+            An Online MasterClass
+          </p>
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-6" style={{ color: '#3A4A2E' }}>
+            Secure Attachment in the Wild
+          </h2>
+
+          <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
+            <img
+              src="/images/secure-attachment-in-the-wild-2026.jpg"
+              alt="Secure Attachment in the Wild, an online MasterClass on Thursday, November 12, 2026, with a photo of Chloe and participants holding hands in a circle"
+              className="w-full h-auto object-cover"
+            />
+            <CardHeader className="text-center">
+              <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
+                Online — Thursday, November 12th, 2026
+              </CardTitle>
+              <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
+                6 Steps You Can Actually Take Towards Trust, Connection &amp; Living Your Full Potential
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4 text-center">
+              <p className="text-muted-foreground">5:30–7pm PT / 6:30–8pm MT / 8:30–10pm ET</p>
+              <div className="pt-4">
+                <CallToActionButton
+                  href="https://luma.com/j44m3i5x"
+                  className="text-white hover:opacity-90"
+                  style={{ backgroundColor: '#B5643D' }}
+                >
+                  Register for the MasterClass
+                </CallToActionButton>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </SectionWrapper>
+
       {/* One Day Immersions */}
       <SectionWrapper className="bg-transparent">
         <div className="max-w-4xl mx-auto text-center">
