@@ -8,9 +8,9 @@ const MeetFacilitatorsSection: React.FC = () => {
     <SectionWrapper className="bg-transparent">
       <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">Meet Your Facilitators</h2>
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        <Card className="text-center">
+        <Card className="text-center bg-white/30 watercolor-blur">
           <CardHeader>
-            <img src="/images/chloe-portrait.png" alt="Chloe Good, program facilitator" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
+            <img src="/images/chloe-bio.jpg" alt="Chloe Good smiling in a red sweater in front of greenery" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
             <CardTitle className="text-2xl text-primary">Chloe Good</CardTitle>
             <CardDescription className="text-lg">Somatic Attachment Repair & Executive Coach</CardDescription>
           </CardHeader>
@@ -26,7 +26,7 @@ const MeetFacilitatorsSection: React.FC = () => {
             </p>
           </CardContent>
         </Card>
-        <Card className="text-center">
+        <Card className="text-center bg-white/30 watercolor-blur">
           <CardHeader>
             <img src="/images/spencer-jacobson.png" alt="Spencer Jacobson, Leadership Coach" className="w-32 h-32 rounded-full mx-auto mb-4 object-cover" />
             <CardTitle className="text-2xl text-primary">Spencer Jacobson</CardTitle>
