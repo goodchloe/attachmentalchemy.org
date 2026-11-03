@@ -9,7 +9,7 @@ const EventsPage: React.FC = () => {
     <>
       {/* Hero Section */}
       <SectionWrapper className="!py-0">
-        <div className="relative min-h-[35vh] md:min-h-[40vh] flex items-center justify-center text-center rounded-lg overflow-hidden">
+        <div className="relative min-h-[35vh] md:min-h-[40vh] flex items-center justify-center text-center organic-card overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-[#F5F0E6]/90 via-[#E8DCC8]/80 to-[#D4C4A8]/70" />
           <div className="relative z-10 p-6 max-w-4xl mx-auto">
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight animate-fade-in" style={{ color: '#3A4A2E' }}>
@@ -32,7 +32,7 @@ const EventsPage: React.FC = () => {
             One Day Immersions — Attachment Alchemy
           </h2>
 
-          <div className="max-w-3xl mx-auto mb-10 rounded-lg overflow-hidden shadow-lg">
+          <div className="max-w-3xl mx-auto mb-10 organic-photo-soft overflow-hidden soft-warm-shadow">
             <img
               src="/images/immersion-group-photo.jpg"
               alt="Participants gathered in a circle during an Attachment Alchemy workshop"

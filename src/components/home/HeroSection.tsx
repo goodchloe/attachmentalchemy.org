@@ -1,14 +1,13 @@
 import React from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import CallToActionButton from '@/components/CallToActionButton';
-import chloePhoto from '@/assets/chloe-hero.jpg';
 import heroBg from '@/assets/hero-watercolor.jpg';
 
 
 const HeroSection: React.FC = () => {
   return (
     <SectionWrapper className="!py-0">
-      <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center text-center rounded-lg overflow-hidden">
+      <div className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center text-center organic-card overflow-hidden">
         <img src={heroBg} alt="Watercolor mountains in earthy tones" className="absolute inset-0 w-full h-full object-cover" />
         <div className="relative z-10 p-8 max-w-4xl mx-auto" style={{ color: '#3A4A2E' }}>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-2 leading-tight animate-fade-in">Attachment Alchemy</h1>
@@ -18,22 +17,13 @@ const HeroSection: React.FC = () => {
             January 20 - June 9, 2027
           </p>
           
-          {/* Photos of facilitators */}
-          <div className="flex justify-center items-center gap-6 mb-6">
-            <div className="flex flex-col items-center">
-              <img 
-                src={chloePhoto}
-                alt="Chloe Good" 
-                className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-lg"
-              />
-            </div>
-            <div className="flex flex-col items-center">
-              <img 
-                src="/images/spencer-jacobson.png" 
-                alt="Spencer Jacobson" 
-                className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shadow-lg"
-              />
-            </div>
+          {/* Photo of Chloe & Spencer together */}
+          <div className="flex justify-center items-center mb-6">
+            <img
+              src="/images/affectionate-couple-garden.jpg"
+              alt="Chloe Good and Spencer Jacobson together in a leafy garden"
+              className="w-[60vw] h-[60vw] max-w-[27rem] max-h-[27rem] rounded-full object-cover shadow-lg"
+            />
           </div>
           
           <p className="text-lg md:text-xl mb-8" style={{ color: '#3A4A2E' }}>

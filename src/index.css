@@ -33,7 +33,7 @@
     --input: 0 0% 96%; /* Light Gray Input Background - Kept */
     --ring: 0 0% 30%; /* Darker Gray for ring */
 
-    --radius: 0.5rem; /* Kept */
+    --radius: 1rem; /* Softer, rounder corners site-wide */
   }
 
   .dark {
@@ -75,5 +75,29 @@
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
+  }
+}
+
+@layer utilities {
+  /* Organic, nature-inspired shapes — soft blobs instead of straight edges */
+  .organic-photo {
+    border-radius: 58% 42% 55% 45% / 48% 56% 44% 52%;
+  }
+  .organic-photo-alt {
+    border-radius: 45% 55% 48% 52% / 56% 44% 58% 42%;
+  }
+  .organic-photo-soft {
+    border-radius: 3rem 4.5rem 3rem 4.5rem / 4rem 3rem 4rem 3rem;
+  }
+  .organic-card {
+    border-radius: 2.5rem 3.5rem 2.5rem 3.5rem / 3rem 2.5rem 3rem 2.5rem;
+  }
+  .soft-warm-shadow {
+    box-shadow: 0 18px 45px -18px rgba(122, 82, 48, 0.28);
+  }
+  /* Lets the watercolor background show through white cards while keeping text readable */
+  .watercolor-blur {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
 }
