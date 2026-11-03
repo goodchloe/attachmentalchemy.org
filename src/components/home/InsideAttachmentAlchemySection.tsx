@@ -7,7 +7,7 @@ const InsideAttachmentAlchemySection: React.FC = () => {
   return (
     <section className="relative py-12 md:py-16 lg:py-20 animate-fade-in bg-transparent">
       <div className="relative w-full px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-4" style={{ color: '#3A4A2E' }}>Inside Attachment Alchemy</h2>
+        <h2 className="section-title text-3xl md:text-4xl font-semibold text-center mb-4" style={{ color: '#3A4A2E' }}>Inside Attachment Alchemy</h2>
         <p className="text-xl text-center mb-10" style={{ color: '#3A4A2E' }}>5 Months from January 20 - June 9, 2027</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
           <Card className="organic-card soft-warm-shadow bg-white/30 watercolor-blur md:col-span-1 lg:col-span-3">

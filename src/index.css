@@ -6,22 +6,22 @@
 @layer base {
   :root {
     --background: 0 0% 98%; /* Very Light Gray - Kept */
-    --foreground: 0 0% 10%; /* Almost Black */
+    --foreground: 94 23% 23%; /* Deep forest green (#3A4A2E) */
 
     --card: 0 0% 100%; /* White - Kept */
-    --card-foreground: 0 0% 10%; /* Almost Black */
+    --card-foreground: 94 23% 23%; /* Deep forest green */
 
     --popover: 0 0% 100%; /* White - Kept */
     --popover-foreground: 0 0% 10%; /* Almost Black */
 
-    --primary: 0 0% 13%; /* Very Dark Gray / Near Black */
+    --primary: 94 23% 23%; /* Deep forest green */
     --primary-foreground: 0 0% 95%; /* Very Light Gray / Off-White */
 
     --secondary: 0 0% 92%; /* Light Gray */
     --secondary-foreground: 0 0% 20%; /* Dark Gray */
 
     --muted: 0 0% 94%; /* Light Gray - Kept */
-    --muted-foreground: 0 0% 40%; /* Mid Gray */
+    --muted-foreground: 30 14% 27%; /* Warm earthy brown, readable over watercolor */
 
     --accent: 200 60% 55%; /* Subtle Sky Blue - Kept */
     --accent-foreground: 0 0% 100%; /* White - Kept */
@@ -96,6 +96,16 @@
     box-shadow: 0 18px 45px -18px rgba(122, 82, 48, 0.28);
   }
   /* Lets the watercolor background show through white cards while keeping text readable */
+  /* Small terracotta flourish under section headings */
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 2px;
+    margin: 0.9rem auto 0;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, transparent, #B5643D 20%, #B5643D 80%, transparent);
+  }
   .watercolor-blur {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);

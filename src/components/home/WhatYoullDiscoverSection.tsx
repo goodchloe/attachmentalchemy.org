@@ -7,7 +7,7 @@ const WhatYoullDiscoverSection: React.FC = () => {
   return (
     <SectionWrapper className="bg-transparent">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-10 text-foreground">What You'll Discover</h2>
+        <h2 className="section-title text-3xl md:text-4xl font-semibold text-center mb-10" style={{ color: '#3A4A2E' }}>What You'll Discover</h2>
         <div className="space-y-6 text-lg text-muted-foreground">
           <div className="grid md:grid-cols-1 gap-6">
             <div className="flex items-start">

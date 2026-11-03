@@ -6,7 +6,7 @@ const IntroductionSection: React.FC = () => {
     <section className="py-12 md:py-16 lg:py-20 animate-fade-in bg-transparent">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center" style={{ color: '#3A4A2E' }}>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-8" style={{ color: '#3A4A2E' }}>ATTACHMENT ALCHEMY</h2>
+          <h2 className="section-title text-2xl md:text-3xl font-semibold tracking-[0.2em] mb-8" style={{ color: '#3A4A2E' }}>ATTACHMENT ALCHEMY</h2>
           <p className="text-lg md:text-xl mb-6">
             Attachment Alchemy is a five-month transformational journey that combines the best practices from the cutting edge modalities that heal attachment wounding - Internal Family Systems, Hakomi, Somatic Experiencing, Ideal Parent Figure Protocol, the Adult Attachment Repair Model & peer counseling to rewire your nervous system, repair core attachment wounds, and reclaim your innate capacity for deep love, safety, and aliveness—within yourself and in relationship.
           </p>
