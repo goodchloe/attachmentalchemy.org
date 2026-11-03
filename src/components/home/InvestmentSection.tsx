@@ -8,7 +8,7 @@ const InvestmentSection: React.FC = () => {
     <section className="py-12 md:py-16 lg:py-20 animate-fade-in bg-transparent">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="section-title text-3xl md:text-4xl font-semibold mb-4" style={{ color: '#3A4A2E' }}>Investment</h2>
+          <h2 className="section-title text-3xl md:text-4xl font-semibold mb-8" style={{ color: '#3A4A2E' }}>Investment</h2>
           <Card className="organic-card soft-warm-shadow p-6 mb-8 bg-white/30 watercolor-blur">
             <p className="text-sm font-semibold tracking-[0.2em] uppercase mb-2" style={{ color: '#B5643D' }}>Program Cost</p>
             <CardTitle className="text-primary mb-3 text-2xl md:text-3xl">Sliding scale $7,000 – $10,000</CardTitle>
