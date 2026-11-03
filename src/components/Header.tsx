@@ -38,7 +38,7 @@ const Header: React.FC = () => {
           </nav>
           
           <div className="hidden md:block">
-            <Button asChild variant="default" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button asChild variant="default" className="bg-[#B5643D] hover:bg-[#B5643D]/90 text-white rounded-full px-6">
               <a href="https://goodcoaching.as.me/?appointmentType=80123371" target="_blank" rel="noopener noreferrer">Book a Call</a>
             </Button>
           </div>
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
                 {item.name}
               </NavLink>
             ))}
-            <Button asChild variant="default" className="bg-primary hover:bg-primary/90 text-primary-foreground mt-4" onClick={() => setIsMobileMenuOpen(false)}>
+            <Button asChild variant="default" className="bg-[#B5643D] hover:bg-[#B5643D]/90 text-white rounded-full px-6 mt-4" onClick={() => setIsMobileMenuOpen(false)}>
               <a href="https://goodcoaching.as.me/?appointmentType=80123371" target="_blank" rel="noopener noreferrer">Book a Call</a>
             </Button>
           </nav>
