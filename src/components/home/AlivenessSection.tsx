@@ -19,9 +19,10 @@ const pillars = [
   {
     title: 'Skilled Loving Community',
     text: 'Be met by warm, experienced guides and a circle that welcomes all of who you are.',
-    src: '/images/chloe-arms-open.jpg',
-    alt: 'Chloe laughing with her arms open wide by the water',
+    src: '/images/community-circle.jpg',
+    alt: 'A circle of people sitting close together, two of them holding hands and smiling warmly at each other',
     shape: 'organic-photo-soft',
+    position: 'center 8%',
   },
 ];
 
@@ -31,7 +32,7 @@ const AlivenessSection: React.FC = () => {
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {pillars.map((p) => (
           <div key={p.title} className="text-center">
-            <img src={p.src} alt={p.alt} className={`w-full h-64 object-cover ${p.shape} soft-warm-shadow mb-4`} />
+            <img src={p.src} alt={p.alt} className={`w-full h-64 object-cover ${p.shape} soft-warm-shadow mb-4`} style={p.position ? { objectPosition: p.position } : undefined} />
             <h3 className="text-xl font-semibold text-primary mb-2">{p.title}</h3>
             <p className="text-muted-foreground">{p.text}</p>
           </div>
