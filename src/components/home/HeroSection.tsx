@@ -19,14 +19,6 @@ const HeroSection: React.FC = () => {
             Deepen your capacity to heal, connect, and guide others.
           </p>
 
-          <div className="max-w-2xl mx-auto space-y-4 text-lg md:text-xl leading-relaxed mb-8" style={{ color: '#3A4A2E' }}>
-            <p>
-              A five-month immersive training for therapists, coaches, healers, and facilitators ready to develop powerful relational healing skills while transforming their own attachment patterns.
-            </p>
-            <p>
-              Through embodied practice, peer-to-peer healing, and skilled community, learn to bring greater security, depth, and presence to your relationships and your work.
-            </p>
-          </div>
           
           <p className="font-serif text-xl md:text-2xl mb-6 font-medium" style={{ color: '#B5643D' }}>
             January 20 - June 9, 2027
