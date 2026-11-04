@@ -1,13 +1,37 @@
 import React from 'react';
-import type { LucideIcon } from 'lucide-react';
-import { Trees, Sunrise, MessageCircleHeart, Video, MessagesSquare, Headphones, Wind, Users, MapPin } from 'lucide-react';
+import type { LucideProps } from 'lucide-react';
+import { Trees, Sunrise, MessageCircleHeart, MessagesSquare, Headphones, Wind, Users, MapPin } from 'lucide-react';
 
 const GREEN = '#3A4A2E';
 const TERRACOTTA = '#B5643D';
 
+type IconComponent = React.ComponentType<LucideProps>;
+
+// A small group of three people, drawn in the same line style as the other icons.
+const PeopleGroup: React.FC<LucideProps> = ({ className, style, strokeWidth = 2, size: _size, absoluteStrokeWidth: _abs, ...rest }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    style={style}
+    {...rest}
+  >
+    <circle cx="12" cy="7" r="3" />
+    <path d="M6.5 20v-1.5a5.5 5.5 0 0 1 11 0V20" />
+    <circle cx="4.5" cy="9.5" r="2.2" />
+    <path d="M1 19v-1a4 4 0 0 1 4.6-3.95" />
+    <circle cx="19.5" cy="9.5" r="2.2" />
+    <path d="M23 19v-1a4 4 0 0 0-4.6-3.95" />
+  </svg>
+);
+
 const cardClass = 'rounded-[2rem] bg-white/50 backdrop-blur-sm shadow-lg p-7 md:p-9 text-center';
 
-const IconBadge: React.FC<{ icon: LucideIcon }> = ({ icon: Icon }) => (
+const IconBadge: React.FC<{ icon: IconComponent }> = ({ icon: Icon }) => (
   <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-white/70 shadow-md flex items-center justify-center">
     <Icon className="w-8 h-8" style={{ color: TERRACOTTA }} strokeWidth={1.5} aria-hidden="true" />
   </div>
@@ -41,14 +65,14 @@ const Footnote: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <p className="text-sm italic mt-1 opacity-80" style={{ color: GREEN }}>{children}</p>
 );
 
-const offerings: { icon: LucideIcon; title: string; lines: string[] }[] = [
+const offerings: { icon: IconComponent; title: string; lines: string[] }[] = [
   {
     icon: MessageCircleHeart,
     title: '1:1 Coaching',
-    lines: ['One 1:1 Coaching Session with an Advanced Practitioner', 'Two Group Coaching Sessions with Chloe'],
+    lines: ['One 1:1 Coaching Session with an Advanced Practitioner', 'Two Group Coaching Sessions with Chloe, Lead Facilitator and Practitioner'],
   },
   {
-    icon: Video,
+    icon: PeopleGroup,
     title: 'Live Group Sessions',
     lines: ['Weekly sessions with live teaching, coaching and practices, alternating with peer led small group practice pod meetings for deeper integration and support.'],
   },
@@ -64,7 +88,7 @@ const offerings: { icon: LucideIcon; title: string; lines: string[] }[] = [
   },
   {
     icon: Wind,
-    title: 'Movement & Energy Practices',
+    title: 'Movement & Meditation Practices',
     lines: ['Practices to integrate transformations in your body and nervous system'],
   },
   {
