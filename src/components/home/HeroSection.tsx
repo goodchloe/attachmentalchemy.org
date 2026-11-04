@@ -11,7 +11,22 @@ const HeroSection: React.FC = () => {
         <img src={heroBg} alt="Watercolor mountains in earthy tones" className="absolute inset-0 w-full h-full object-cover" />
         <div className="relative z-10 p-8 max-w-4xl mx-auto" style={{ color: '#3A4A2E' }}>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-2 leading-tight animate-fade-in">Attachment Alchemy</h1>
-          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mb-4 leading-tight" style={{ color: '#3A4A2E' }}>Journey to Embodied Secure Attachment</h2>
+          <h2 className="font-sans text-base sm:text-lg md:text-xl font-semibold uppercase tracking-[0.15em] mb-6 leading-snug" style={{ color: '#3A4A2E' }}>
+            Somatic Attachment &amp; Relational Practitioner Training
+          </h2>
+
+          <p className="font-serif italic text-2xl md:text-3xl mb-6 leading-snug" style={{ color: '#B5643D' }}>
+            Deepen your capacity to heal, connect, and guide others.
+          </p>
+
+          <div className="max-w-2xl mx-auto space-y-4 text-lg md:text-xl leading-relaxed mb-8" style={{ color: '#3A4A2E' }}>
+            <p>
+              A five-month immersive training for therapists, coaches, healers, and facilitators ready to develop powerful relational healing skills while transforming their own attachment patterns.
+            </p>
+            <p>
+              Through embodied practice, peer-to-peer healing, and skilled community, learn to bring greater security, depth, and presence to your relationships and your work.
+            </p>
+          </div>
           
           <p className="font-serif text-xl md:text-2xl mb-6 font-medium" style={{ color: '#B5643D' }}>
             January 20 - June 9, 2027
