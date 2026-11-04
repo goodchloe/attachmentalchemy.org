@@ -6,12 +6,12 @@ const EmailPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    console.log('EmailPopup mounted, setting timer for 10 seconds');
-    // Show popup after 10 seconds
+    console.log('EmailPopup mounted, setting timer for 20 seconds');
+    // Show popup after 20 seconds
     const timer = setTimeout(() => {
       console.log('Timer fired, showing popup');
       setIsOpen(true);
-    }, 10000);
+    }, 20000);
 
     return () => {
       console.log('EmailPopup cleanup, clearing timer');
