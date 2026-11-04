@@ -58,18 +58,20 @@ const EmailPopup: React.FC = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-xl p-0 bg-white border-0 shadow-xl">
+      <DialogContent className="w-[calc(100%-2rem)] max-w-xl max-h-[90vh] overflow-y-auto p-0 bg-white border-0 shadow-xl rounded-2xl">
         <iframe 
           src="https://subscribe-forms.beehiiv.com/c67a5af1-d12a-4d90-9a7b-2fb422daba82" 
-          className="w-full h-96 border-0 rounded-lg" 
-          data-test-id="beehiiv-embed" 
-          frameBorder="0" 
-          scrolling="no"
+          title="Email newsletter signup"
+          // Taller on phones, where the form wraps onto more lines; it can
+          // scroll inside if it still doesn't fit.
+          className="w-full h-[34rem] max-h-[85vh] sm:h-96 border-0 rounded-lg"
+          data-test-id="beehiiv-embed"
+          frameBorder="0"
+          scrolling="auto"
           style={{
             margin: 0,
             borderRadius: '8px',
-            backgroundColor: 'transparent',
-            overflow: 'hidden'
+            backgroundColor: 'transparent'
           }}
         />
       </DialogContent>
