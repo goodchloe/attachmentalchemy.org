@@ -20,7 +20,7 @@ const IntroductionSection: React.FC = () => {
             Taking all of these trainings individually would cost you $50,000+.
           </p>
           <p className="text-lg md:text-xl mb-6">
-            This is your invitation to root into secure attachment, dissolve old protection strategies, and open fully to intimacy, purpose, and connection.
+            This is your invitation to root into secure attachment, dissolve old protection strategies, and open fully to intimacy, purpose, and connection for yourself and your clients.
           </p>
           <p className="text-lg md:text-xl font-semibold">
             This is more than a course—it's a path to a life of deep intimacy, aliveness and purpose.
