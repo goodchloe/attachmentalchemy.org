@@ -5,7 +5,7 @@ import { Puzzle, Feather, Waves, Baby, Ear } from 'lucide-react';
 const GREEN = '#3A4A2E';
 const TERRACOTTA = '#B5643D';
 
-// A simple wooden stick with a small side twig and a knot, in the same line
+// A simple straight stick with two small twigs, in the same line
 // style as the other icons (the Adult Attachment Repair Model is "stick work").
 const Stick: React.FC<LucideProps> = ({ className, style, strokeWidth = 2, size: _size, absoluteStrokeWidth: _abs, ...rest }) => (
   <svg
@@ -19,13 +19,9 @@ const Stick: React.FC<LucideProps> = ({ className, style, strokeWidth = 2, size:
     style={style}
     {...rest}
   >
-    <g transform="rotate(45 12 12)">
-      <rect x="10" y="1.5" width="4" height="21" rx="2" />
-      <path d="M14 8.5c1.6-.6 2.8-1.8 3.4-3.2" />
-      <path d="M11.2 6.5v2" />
-      <path d="M12.8 13.5v2.5" />
-      <path d="M11.2 18v1.5" />
-    </g>
+    <path d="M4 20 20 4" />
+    <path d="M9.5 14.5 5.5 13" />
+    <path d="M14 10l1.4-4" />
   </svg>
 );
 
