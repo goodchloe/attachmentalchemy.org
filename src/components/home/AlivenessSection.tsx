@@ -74,14 +74,11 @@ const AlivenessSection: React.FC = () => {
       {/* Four ways the training works, under the photo strip */}
       <div className="px-4 sm:px-6 lg:px-8 mt-14 md:mt-20">
         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
-          {ways.map(({ icon: Icon, title, text }, i) => (
+          {ways.map(({ icon: Icon, title, text }) => (
             <div key={title} className="text-center">
               <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-5 rounded-full bg-white/60 backdrop-blur-sm shadow-lg flex items-center justify-center">
                 <Icon className="w-8 h-8 md:w-9 md:h-9" style={{ color: '#B5643D' }} strokeWidth={1.5} aria-hidden="true" />
               </div>
-              <p className="font-serif italic text-xl md:text-2xl mb-1" style={{ color: '#B5643D' }}>
-                {String(i + 1).padStart(2, '0')}
-              </p>
               <h3 className="font-serif text-2xl md:text-[1.7rem] font-semibold leading-tight mb-3" style={{ color: '#3A4A2E' }}>
                 {title}
               </h3>
