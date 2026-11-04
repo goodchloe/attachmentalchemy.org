@@ -1,4 +1,5 @@
 import React from 'react';
+import { HeartHandshake, Hand, Users, Sprout } from 'lucide-react';
 
 const pillars = [
   {
@@ -24,6 +25,29 @@ const pillars = [
   },
 ];
 
+const ways = [
+  {
+    icon: HeartHandshake,
+    title: 'Heal Through Relationship',
+    text: 'Go beyond understanding attachment patterns through repeated, supported relational experiences that help build new ways of connecting.',
+  },
+  {
+    icon: Hand,
+    title: 'Develop Embodied Skills',
+    text: 'Learn an integrative toolkit drawn from somatic attachment repair, IFS, Hakomi, body-based practices, and relational facilitation.',
+  },
+  {
+    icon: Users,
+    title: 'Practice in Skilled Community',
+    text: 'Develop through consistent peer practice, feedback, real connection, and immersive learning rather than relying on occasional sessions alone.',
+  },
+  {
+    icon: Sprout,
+    title: 'Embody What You Teach',
+    text: 'Bring the work into your own life so you can meet others with greater presence, discernment, compassion, and practical skill.',
+  },
+];
+
 // A full-width strip of three photos, divided by thin white lines,
 // with each heading and line of text resting on the bottom of its photo.
 const AlivenessSection: React.FC = () => {
@@ -45,6 +69,28 @@ const AlivenessSection: React.FC = () => {
             </figcaption>
           </figure>
         ))}
+      </div>
+
+      {/* Four ways the training works, under the photo strip */}
+      <div className="px-4 sm:px-6 lg:px-8 mt-14 md:mt-20">
+        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
+          {ways.map(({ icon: Icon, title, text }, i) => (
+            <div key={title} className="text-center">
+              <div className="w-16 h-16 md:w-20 md:h-20 mx-auto mb-5 rounded-full bg-white/60 backdrop-blur-sm shadow-lg flex items-center justify-center">
+                <Icon className="w-8 h-8 md:w-9 md:h-9" style={{ color: '#B5643D' }} strokeWidth={1.5} aria-hidden="true" />
+              </div>
+              <p className="font-serif italic text-xl md:text-2xl mb-1" style={{ color: '#B5643D' }}>
+                {String(i + 1).padStart(2, '0')}
+              </p>
+              <h3 className="font-serif text-2xl md:text-[1.7rem] font-semibold leading-tight mb-3" style={{ color: '#3A4A2E' }}>
+                {title}
+              </h3>
+              <p className="text-lg md:text-xl leading-relaxed max-w-sm mx-auto" style={{ color: '#3A4A2E' }}>
+                {text}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
