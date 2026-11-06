@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import AttachmentAlchemyPage from "./pages/AttachmentAlchemyPage";
 import EventsPage from "./pages/EventsPage";
+import CEsForTherapistsPage from "./pages/CEsForTherapistsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Layout><AttachmentAlchemyPage /></Layout>} />
           <Route path="/events" element={<Layout><EventsPage /></Layout>} />
+          <Route path="/ce-for-therapists" element={<Layout><CEsForTherapistsPage /></Layout>} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

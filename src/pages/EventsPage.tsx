@@ -125,6 +125,36 @@ const EventsPage: React.FC = () => {
         </div>
       </SectionWrapper>
 
+      {/* CE course for therapists */}
+      <SectionWrapper className="bg-transparent">
+        <div className="max-w-4xl mx-auto">
+          <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
+            <CardHeader className="text-center">
+              <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
+                For Therapists — Sunday, December 13th, 2026
+              </CardTitle>
+              <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
+                Relational and Somatic Practices for Healing Attachment Wounds
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4 text-center">
+              <p className="text-muted-foreground text-lg">
+                A day-long, in-person CE course near Berkeley, CA (5.5 clinical CE credits), the day after the December 12th Berkeley Immersion.
+              </p>
+              <div className="pt-4">
+                <CallToActionButton
+                  to="/ce-for-therapists"
+                  className="text-white hover:opacity-90"
+                  style={{ backgroundColor: '#B5643D' }}
+                >
+                  Learn More About the CE Course <ArrowRight className="ml-2 h-4 w-4 inline" />
+                </CallToActionButton>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </SectionWrapper>
+
       {/* 5-Month Journey */}
       <SectionWrapper className="bg-transparent">
         <div className="max-w-4xl mx-auto">
