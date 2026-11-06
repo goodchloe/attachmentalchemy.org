@@ -104,10 +104,10 @@ const CEsForTherapistsPage: React.FC = () => {
       {/* Hero */}
       <SectionWrapper className="!py-0">
         <div className="relative min-h-[35vh] md:min-h-[40vh] flex items-center justify-center text-center organic-card overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#F5F0E6]/90 via-[#E8DCC8]/80 to-[#D4C4A8]/70" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#F5F0E6]/45 via-[#E8DCC8]/40 to-[#D4C4A8]/35" />
           <div className="relative z-10 p-6 max-w-4xl mx-auto">
             <p className="uppercase tracking-widest text-sm md:text-base font-semibold mb-4" style={{ color: TERRACOTTA }}>
-              CEs for Therapists
+              Continuing Education for Therapists
             </p>
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight animate-fade-in" style={{ color: GREEN }}>
               Relational and Somatic Practices for Healing Attachment Wounds
