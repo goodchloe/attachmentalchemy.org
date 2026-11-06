@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'; // Assuming you have a shadcn B
 const navItems = [
   { name: 'The Program', path: '/' },
   { name: 'Events', path: '/events' },
+  { name: 'CEs for Therapists', path: '/ce-for-therapists' },
 ];
 
 const Header: React.FC = () => {
