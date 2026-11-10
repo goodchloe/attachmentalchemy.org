@@ -120,7 +120,7 @@ const InsideAttachmentAlchemySection: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-6 sm:gap-4 mt-6">
                 <Gathering label="Initiation" name="Immersion 1" when="Feb 10-14" where="Retreat Center in N. California" />
                 <Divider />
-                <Gathering label="Depth" name="Immersion 2" when="April 14-18" where="Retreat Center in N. California" />
+                <Gathering label="Depth" name="Immersion 2" when="April 28-May 2" where="Retreat Center in N. California" />
               </div>
               <div className="mt-7">
                 <Footnote>*Food & Lodging not included in course cost</Footnote>
