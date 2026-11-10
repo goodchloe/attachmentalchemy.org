@@ -17,7 +17,7 @@ const courseDetails: { label: string; value: string }[] = [
   { label: 'Date and time', value: 'December 13, 2026, 10:00 a.m. – 5:00 p.m. (check-in opens 9:30 a.m.)' },
   { label: 'Delivery format', value: 'In-person' },
   { label: 'Location', value: 'TBD near Berkeley, CA' },
-  { label: 'CE amount', value: '5.5 clinical CE credits' },
+  { label: 'CE amount', value: '5.5 clinical CE credits (CE approval pending)' },
 ];
 
 const learningObjectives = [
@@ -411,6 +411,10 @@ const CEsForTherapistsPage: React.FC = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6 text-lg leading-relaxed" style={{ color: GREEN }}>
+              <div>
+                <SubHeading>CE approval</SubHeading>
+                <p>CE approval for this course is pending. We’ll update this page once approval is confirmed.</p>
+              </div>
               <div>
                 <SubHeading>Completion requirements</SubHeading>
                 <p>
