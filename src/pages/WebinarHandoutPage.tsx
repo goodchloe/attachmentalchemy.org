@@ -33,8 +33,11 @@ const WebinarHandoutPage: React.FC = () => {
         <div className="relative min-h-[30vh] flex items-center justify-center text-center organic-card overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-[#F5F0E6]/90 via-[#E8DCC8]/80 to-[#D4C4A8]/70" />
           <div className="relative z-10 p-6 max-w-4xl mx-auto">
-            <p className="font-serif text-lg md:text-xl mb-3" style={{ color: TERRACOTTA }}>
-              For participants of Secure Attachment in the Wild
+            <p className="text-sm md:text-base uppercase tracking-widest mb-2 text-muted-foreground">
+              For participants of the webinar
+            </p>
+            <p className="font-serif text-lg md:text-xl mb-5 max-w-2xl mx-auto leading-snug" style={{ color: TERRACOTTA }}>
+              Secure Attachment in the Wild: 6 Steps You Can Actually Take Towards Trust, Connection &amp; Living Your Full Potential
             </p>
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight" style={{ color: GREEN }}>
               Attachment Patterns, Healing Vectors &amp; Wise Adult Qualities
