@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import { Card, CardContent } from '@/components/ui/card';
-import { Link } from 'react-router-dom';
+import CallToActionButton from '@/components/CallToActionButton';
 import { Download, FileText } from 'lucide-react';
 
 // A private page for participants of the "Secure Attachment in the Wild" webinar.
@@ -12,6 +12,7 @@ const GREEN = '#3A4A2E';
 const TERRACOTTA = '#B5643D';
 
 const PDF_FILE = '/downloads/attachment-alchemy-practice-guide.pdf';
+const BOOKING_LINK = 'https://goodcoaching.as.me/?appointmentType=80123371';
 const IMAGE_FILE = '/downloads/attachment-alchemy-practice-guide.jpg';
 
 const WebinarHandoutPage: React.FC = () => {
@@ -35,9 +36,12 @@ const WebinarHandoutPage: React.FC = () => {
             <p className="font-serif text-lg md:text-xl mb-3" style={{ color: TERRACOTTA }}>
               For participants of Secure Attachment in the Wild
             </p>
-            <h1 className="font-serif text-4xl sm:text-5xl font-bold mb-4 leading-tight" style={{ color: GREEN }}>
-              Your Practice Guide
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-3 leading-tight" style={{ color: GREEN }}>
+              Attachment Patterns, Healing Vectors &amp; Wise Adult Qualities
             </h1>
+            <p className="font-serif text-xl md:text-2xl mb-4" style={{ color: GREEN }}>
+              Your Practice Guide
+            </p>
             <p className="text-lg md:text-xl max-w-2xl mx-auto text-muted-foreground">
               Thank you for joining us. Here is the handout from the webinar: the attachment
               patterns, the six healing vectors, and the qualities of the Wise Adult, all in one place.
@@ -85,13 +89,23 @@ const WebinarHandoutPage: React.FC = () => {
           <p className="text-lg text-muted-foreground mb-6">
             Attachment Alchemy is a 5-month journey to embodied secure attachment.
           </p>
-          <Link
-            to="/"
-            className="inline-block font-semibold underline underline-offset-4"
-            style={{ color: TERRACOTTA }}
-          >
-            Learn about the program
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <CallToActionButton
+              href={BOOKING_LINK}
+              className="text-white hover:opacity-90"
+              style={{ backgroundColor: TERRACOTTA }}
+            >
+              Schedule a Call
+            </CallToActionButton>
+            <CallToActionButton
+              to="/"
+              variant="outline"
+              className="border-2 bg-white/80 hover:bg-white"
+              style={{ borderColor: GREEN, color: GREEN }}
+            >
+              Learn About the Program
+            </CallToActionButton>
+          </div>
         </div>
       </SectionWrapper>
     </>
