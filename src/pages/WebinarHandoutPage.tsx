@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import { Card, CardContent } from '@/components/ui/card';
 import CallToActionButton from '@/components/CallToActionButton';
-import { Download, FileText, Headphones } from 'lucide-react';
+import { Download, FileText, Headphones, Image as ImageIcon } from 'lucide-react';
 
 // A private page for participants of the "Secure Attachment in the Wild" webinar.
 // It isn't linked from the menu or anywhere else on the site, and it asks search
@@ -57,25 +57,46 @@ const WebinarHandoutPage: React.FC = () => {
 
       <SectionWrapper className="bg-transparent">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-            <a
-              href={PDF_FILE}
-              download
-              className="inline-flex items-center justify-center gap-2 rounded-md px-8 py-3 font-semibold text-white shadow-lg hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: TERRACOTTA }}
-            >
-              <Download className="h-5 w-5" />
-              Download PDF
-            </a>
-            <a
-              href={IMAGE_FILE}
-              download
-              className="inline-flex items-center justify-center gap-2 rounded-md px-8 py-3 font-semibold border-2 bg-white/80 hover:bg-white transition-colors"
-              style={{ borderColor: GREEN, color: GREEN }}
-            >
-              <FileText className="h-5 w-5" />
-              Download image
-            </a>
+          <p className="font-serif text-xl md:text-2xl mb-4" style={{ color: GREEN }}>
+            Your downloads
+          </p>
+          <div className="grid grid-cols-3 gap-3 md:gap-5 mb-10">
+            {[
+              { href: PDF_FILE, Icon: FileText, label: 'Practice Guide', type: 'PDF', name: undefined },
+              { href: IMAGE_FILE, Icon: ImageIcon, label: 'Practice Guide', type: 'Image', name: undefined },
+              {
+                href: MEDITATION_FILE,
+                Icon: Headphones,
+                label: 'Wise Inner Adult Meditation',
+                type: '9-min audio',
+                name: 'Wise Inner Adult Meditation - Attachment Alchemy.mp3',
+              },
+            ].map(({ href, Icon, label, type, name }) => (
+              <a
+                key={href}
+                href={href}
+                download={name ?? true}
+                className="group flex flex-col items-center text-center rounded-xl bg-white/80 shadow-lg px-2 py-5 md:px-4 md:py-7 hover:bg-white hover:-translate-y-0.5 transition-all"
+              >
+                <span
+                  className="flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-full mb-3"
+                  style={{ backgroundColor: TERRACOTTA }}
+                >
+                  <Icon className="h-6 w-6 md:h-7 md:w-7 text-white" />
+                </span>
+                <span className="font-serif font-bold text-sm md:text-lg leading-tight mb-1" style={{ color: GREEN }}>
+                  {label}
+                </span>
+                <span className="text-xs md:text-sm text-muted-foreground mb-3">{type}</span>
+                <span
+                  className="mt-auto inline-flex items-center gap-1 text-xs md:text-sm font-semibold"
+                  style={{ color: TERRACOTTA }}
+                >
+                  <Download className="h-4 w-4" />
+                  Download
+                </span>
+              </a>
+            ))}
           </div>
 
           <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
