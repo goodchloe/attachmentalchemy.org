@@ -18,6 +18,11 @@ const courseDetails: { label: string; value: string }[] = [
   { label: 'Delivery format', value: 'In-person' },
   { label: 'Location', value: 'TBD near Berkeley, CA' },
   { label: 'CE amount', value: '5.5 clinical CE credits' },
+  {
+    label: 'Price',
+    value:
+      '$150 for this CE course, plus $100 for the required 1-Day Immersion on December 12 ($250 total). Already attended a prior immersion? $150.',
+  },
 ];
 
 const learningObjectives = [
@@ -117,6 +122,9 @@ const CEsForTherapistsPage: React.FC = () => {
             </p>
             <p className="text-lg mb-6" style={{ color: GREEN }}>
               December 13, 2026 · near Berkeley, CA · 5.5 clinical CE credits
+            </p>
+            <p className="text-lg mb-6 -mt-4" style={{ color: TERRACOTTA }}>
+              $150 CE course + $100 prerequisite <span className="whitespace-nowrap">1-Day Immersion</span> (Dec 12)
             </p>
             <RegisterButton />
           </div>
@@ -353,10 +361,10 @@ const CEsForTherapistsPage: React.FC = () => {
             <div>
               <SubHeading>Fees and registration</SubHeading>
               <p>
-                One registration covers both this course ($200, including your CE certificate, tea, and snacks) and the
+                One registration covers both this course ($150, including your CE certificate, tea, and snacks) and the
                 separate prerequisite, the Attachment Alchemy 1-Day Immersion on December 12, 2026 ($100; no CE
-                credit), for a total of $300. If you have attended a prior Attachment Alchemy 1-Day Immersion, register
-                for this course only ($200). Registration closes December 11, 2026.
+                credit), for a total of $250. If you have attended a prior Attachment Alchemy 1-Day Immersion, register
+                for this course only ($150). Registration closes December 11, 2026.
               </p>
             </div>
             <div>
