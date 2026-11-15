@@ -46,6 +46,58 @@ const EventsPage: React.FC = () => {
                 <div className="md:w-full">
                   <CardHeader className="text-center">
                     <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
+                      Berkeley, CA — Saturday, December 12th, 2026
+                    </CardTitle>
+                    <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
+                      An Introduction to the 5-Month Journey to Embodied Secure Attachment
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="space-y-4 text-center">
+                    <p className="text-muted-foreground">Berkeley, California</p>
+                    <div className="pt-4">
+                      <CallToActionButton
+                        href="https://buytickets.at/attachmentalchemy1/2309408"
+                        className="text-white hover:opacity-90"
+                        style={{ backgroundColor: '#B5643D' }}
+                      >
+                        Register for Berkeley Immersion
+                      </CallToActionButton>
+                    </div>
+                  </CardContent>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
+              <CardHeader className="text-center">
+                <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
+                  For Therapists — Sunday, December 13th, 2026
+                </CardTitle>
+                <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
+                  Relational and Somatic Practices for Healing Attachment Wounds
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4 text-center">
+                <p className="text-muted-foreground text-lg">
+                  A day-long, in-person CE course near Berkeley, CA (5.5 clinical CE credits), the day after the December 12th Berkeley Immersion.
+                </p>
+                <div className="pt-4">
+                  <CallToActionButton
+                    to="/ce-for-therapists"
+                    className="text-white hover:opacity-90"
+                    style={{ backgroundColor: '#B5643D' }}
+                  >
+                    Learn More About the CE Course <ArrowRight className="ml-2 h-4 w-4 inline" />
+                  </CallToActionButton>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
+              <div className="md:flex">
+                <div className="md:w-full">
+                  <CardHeader className="text-center">
+                    <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
                       Berkeley, CA — Saturday, September 26th, 2026
                     </CardTitle>
                     <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
@@ -94,64 +146,7 @@ const EventsPage: React.FC = () => {
                 </div>
               </div>
             </Card>
-
-            <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
-              <div className="md:flex">
-                <div className="md:w-full">
-                  <CardHeader className="text-center">
-                    <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
-                      Berkeley, CA — Saturday, December 12th, 2026
-                    </CardTitle>
-                    <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
-                      An Introduction to the 5-Month Journey to Embodied Secure Attachment
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4 text-center">
-                    <p className="text-muted-foreground">Berkeley, California</p>
-                    <div className="pt-4">
-                      <CallToActionButton
-                        href="https://buytickets.at/attachmentalchemy1/2309408"
-                        className="text-white hover:opacity-90"
-                        style={{ backgroundColor: '#B5643D' }}
-                      >
-                        Register for Berkeley Immersion
-                      </CallToActionButton>
-                    </div>
-                  </CardContent>
-                </div>
-              </div>
-            </Card>
           </div>
-        </div>
-      </SectionWrapper>
-
-      {/* CE course for therapists */}
-      <SectionWrapper className="bg-transparent">
-        <div className="max-w-4xl mx-auto">
-          <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
-            <CardHeader className="text-center">
-              <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
-                For Therapists — Sunday, December 13th, 2026
-              </CardTitle>
-              <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
-                Relational and Somatic Practices for Healing Attachment Wounds
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4 text-center">
-              <p className="text-muted-foreground text-lg">
-                A day-long, in-person CE course near Berkeley, CA (5.5 clinical CE credits), the day after the December 12th Berkeley Immersion.
-              </p>
-              <div className="pt-4">
-                <CallToActionButton
-                  to="/ce-for-therapists"
-                  className="text-white hover:opacity-90"
-                  style={{ backgroundColor: '#B5643D' }}
-                >
-                  Learn More About the CE Course <ArrowRight className="ml-2 h-4 w-4 inline" />
-                </CallToActionButton>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </SectionWrapper>
 
