@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import { Card, CardContent } from '@/components/ui/card';
 import CallToActionButton from '@/components/CallToActionButton';
-import { Download, FileText } from 'lucide-react';
+import { Download, FileText, Headphones } from 'lucide-react';
 
 // A private page for participants of the "Secure Attachment in the Wild" webinar.
 // It isn't linked from the menu or anywhere else on the site, and it asks search
@@ -14,6 +14,7 @@ const TERRACOTTA = '#B5643D';
 const PDF_FILE = '/downloads/attachment-alchemy-practice-guide.pdf';
 const BOOKING_LINK = 'https://goodcoaching.as.me/?appointmentType=80123371';
 const IMAGE_FILE = '/downloads/attachment-alchemy-practice-guide.jpg';
+const MEDITATION_FILE = '/downloads/wise-inner-adult-meditation.mp3';
 
 const WebinarHandoutPage: React.FC = () => {
   // Ask search engines not to list this page.
@@ -47,7 +48,8 @@ const WebinarHandoutPage: React.FC = () => {
             </p>
             <p className="text-lg md:text-xl max-w-2xl mx-auto text-muted-foreground">
               Thank you for joining us. Here is the handout from the webinar: the attachment
-              patterns, the six healing vectors, and the qualities of the Wise Adult, all in one place.
+              patterns, the six healing vectors, and the qualities of the Wise Adult, all in one place,
+              plus a guided Wise Inner Adult meditation.
             </p>
           </div>
         </div>
@@ -83,6 +85,31 @@ const WebinarHandoutPage: React.FC = () => {
                 alt="Attachment Alchemy practice guide: the Wave, Island, Mixed and Anchor attachment patterns, the qualities of the Wise Adult, and the six healing vectors for attachment repair"
                 className="w-full h-auto rounded"
               />
+            </CardContent>
+          </Card>
+
+          <Card className="bg-white/80 border-none shadow-lg mt-10">
+            <CardContent className="p-6 md:p-8">
+              <Headphones className="h-8 w-8 mx-auto mb-3" style={{ color: TERRACOTTA }} />
+              <h2 className="font-serif text-2xl md:text-3xl font-bold mb-2" style={{ color: GREEN }}>
+                Wise Inner Adult Meditation
+              </h2>
+              <p className="text-muted-foreground mb-5">
+                A 9-minute guided meditation to meet and strengthen your Wise Inner Adult.
+                Listen here, or download it to come back to whenever you need it.
+              </p>
+              <audio controls preload="none" src={MEDITATION_FILE} className="w-full mb-5">
+                Your browser can't play this audio here, but you can still download it below.
+              </audio>
+              <a
+                href={MEDITATION_FILE}
+                download="Wise Inner Adult Meditation - Attachment Alchemy.mp3"
+                className="inline-flex items-center justify-center gap-2 rounded-md px-8 py-3 font-semibold text-white shadow-lg hover:opacity-90 transition-opacity"
+                style={{ backgroundColor: TERRACOTTA }}
+              >
+                <Download className="h-5 w-5" />
+                Download meditation (MP3)
+              </a>
             </CardContent>
           </Card>
 
