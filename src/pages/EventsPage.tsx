@@ -22,6 +22,45 @@ const EventsPage: React.FC = () => {
         </div>
       </SectionWrapper>
 
+      {/* The Training (5-month program) */}
+      <SectionWrapper className="bg-transparent">
+        <div className="max-w-4xl mx-auto">
+          <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
+            <div className="md:flex">
+              <div className="md:w-full">
+                <CardHeader className="text-center">
+                  <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
+                    Attachment Alchemy
+                  </CardTitle>
+                  <p className="font-sans text-sm md:text-base font-semibold uppercase tracking-[0.15em]" style={{ color: '#3A4A2E' }}>
+                    Somatic Attachment &amp; Relational Practitioner Training
+                  </p>
+                  <CardDescription className="font-serif italic text-lg md:text-xl" style={{ color: '#B5643D' }}>
+                    Deepen your capacity to heal, connect, and guide others.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4 text-center">
+                  <p className="text-muted-foreground text-lg">
+                    A five-month transformational journey combining somatic healing, attachment repair, nervous system regulation, and community support.
+                    <br />
+                    January 20 - June 9, 2027.
+                  </p>
+                  <div className="pt-4">
+                    <CallToActionButton
+                      to="/"
+                      className="text-white hover:opacity-90"
+                      style={{ backgroundColor: '#B5643D' }}
+                    >
+                      Learn More About Attachment Alchemy <ArrowRight className="ml-2 h-4 w-4 inline" />
+                    </CallToActionButton>
+                  </div>
+                </CardContent>
+              </div>
+            </div>
+          </Card>
+        </div>
+      </SectionWrapper>
+
       {/* One Day Immersions */}
       <SectionWrapper className="bg-transparent">
         <div className="max-w-4xl mx-auto text-center">
@@ -92,97 +131,38 @@ const EventsPage: React.FC = () => {
                 </div>
               </CardContent>
             </Card>
-
-            <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
-              <div className="md:flex">
-                <div className="md:w-full">
-                  <CardHeader className="text-center">
-                    <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
-                      Berkeley, CA — Saturday, September 26th, 2026
-                    </CardTitle>
-                    <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
-                      An Introduction to the 5-Month Journey to Embodied Secure Attachment
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4 text-center">
-                    <p className="text-muted-foreground">Berkeley, California</p>
-                    <div className="pt-4">
-                      <CallToActionButton
-                        href="https://buytickets.at/attachmentalchemy1/2291535"
-                        className="text-white hover:opacity-90"
-                        style={{ backgroundColor: '#B5643D' }}
-                      >
-                        Register for Berkeley Immersion
-                      </CallToActionButton>
-                    </div>
-                  </CardContent>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
-              <div className="md:flex">
-                <div className="md:w-full">
-                  <CardHeader className="text-center">
-                    <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
-                      Boulder, CO — Sunday, October 18th, 2026
-                    </CardTitle>
-                    <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
-                      An Introduction to the 5-Month Journey to Embodied Secure Attachment
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4 text-center">
-                    <p className="text-muted-foreground">Boulder, Colorado</p>
-                    <div className="pt-4">
-                      <CallToActionButton
-                        href="https://buytickets.at/attachmentalchemy1/2302212"
-                        className="text-white hover:opacity-90"
-                        style={{ backgroundColor: '#B5643D' }}
-                      >
-                        Register for Boulder Immersion
-                      </CallToActionButton>
-                    </div>
-                  </CardContent>
-                </div>
-              </div>
-            </Card>
           </div>
         </div>
       </SectionWrapper>
 
-      {/* 5-Month Journey */}
+      {/* Past Events */}
       <SectionWrapper className="bg-transparent">
-        <div className="max-w-4xl mx-auto">
-          <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
-            <div className="md:flex">
-              <div className="md:w-full">
-                <CardHeader className="text-center">
-                  <CardTitle className="font-serif text-2xl md:text-3xl" style={{ color: '#3A4A2E' }}>
-                    5-Month Journey to Embodied Secure Attachment
-                  </CardTitle>
-                  <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
-                    Attachment Alchemy
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4 text-center">
-                  <p className="text-muted-foreground text-lg">
-                    A five-month transformational journey combining somatic healing, attachment repair, nervous system regulation, and community support.
-                    <br />
-                    January 20 - June 9, 2027.
-                  </p>
-                  <div className="pt-4">
-                    <CallToActionButton
-                      to="/"
-                      className="text-white hover:opacity-90"
-                      style={{ backgroundColor: '#B5643D' }}
-                    >
-                      Learn More About Attachment Alchemy <ArrowRight className="ml-2 h-4 w-4 inline" />
-                    </CallToActionButton>
-                  </div>
-                </CardContent>
-              </div>
-            </div>
-          </Card>
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-6" style={{ color: '#3A4A2E' }}>
+            Past Events
+          </h2>
+          <div className="space-y-6">
+            <Card className="bg-white/60 border-none shadow-md">
+              <CardHeader className="text-center">
+                <CardTitle className="font-serif text-xl md:text-2xl" style={{ color: '#3A4A2E' }}>
+                  Berkeley, CA — Saturday, September 26th, 2026
+                </CardTitle>
+                <CardDescription className="text-base">
+                  One Day Immersion · Berkeley, California
+                </CardDescription>
+              </CardHeader>
+            </Card>
+            <Card className="bg-white/60 border-none shadow-md">
+              <CardHeader className="text-center">
+                <CardTitle className="font-serif text-xl md:text-2xl" style={{ color: '#3A4A2E' }}>
+                  Boulder, CO — Sunday, October 18th, 2026
+                </CardTitle>
+                <CardDescription className="text-base">
+                  One Day Immersion · Boulder, Colorado
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
         </div>
       </SectionWrapper>
 
