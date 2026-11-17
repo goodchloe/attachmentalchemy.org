@@ -65,10 +65,10 @@ const EventsPage: React.FC = () => {
       <SectionWrapper className="bg-transparent">
         <div className="max-w-4xl mx-auto text-center">
           <p className="font-serif text-xl md:text-2xl mb-4" style={{ color: '#B5643D' }}>
-            An Introduction to the 5 Month Journey to Embodied Secure Attachment
+            An Introduction to Attachment Alchemy
           </p>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold mb-6" style={{ color: '#3A4A2E' }}>
-            One Day Immersions — Attachment Alchemy
+            One Day Immersions
           </h2>
 
           <div className="max-w-3xl mx-auto mb-10 organic-photo-soft overflow-hidden soft-warm-shadow">
@@ -88,7 +88,7 @@ const EventsPage: React.FC = () => {
                       Berkeley, CA — Saturday, December 12th, 2026
                     </CardTitle>
                     <CardDescription className="text-lg" style={{ color: '#B5643D' }}>
-                      An Introduction to the 5-Month Journey to Embodied Secure Attachment
+                      An Introduction to Attachment Alchemy
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4 text-center">
