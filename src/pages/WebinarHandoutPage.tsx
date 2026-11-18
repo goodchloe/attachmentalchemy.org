@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import SectionWrapper from '@/components/SectionWrapper';
 import { Card, CardContent } from '@/components/ui/card';
 import CallToActionButton from '@/components/CallToActionButton';
-import { Download, FileText, Headphones, Image as ImageIcon } from 'lucide-react';
+import { Download, FileText, Headphones } from 'lucide-react';
 
 // A private page for participants of the "Secure Attachment in the Wild" webinar.
 // It isn't linked from the menu or anywhere else on the site, and it asks search
@@ -60,10 +60,9 @@ const WebinarHandoutPage: React.FC = () => {
           <p className="font-serif text-xl md:text-2xl mb-4" style={{ color: GREEN }}>
             Your downloads
           </p>
-          <div className="grid grid-cols-3 gap-3 md:gap-5 mb-10">
+          <div className="grid grid-cols-2 gap-3 md:gap-5 mb-10 max-w-xl mx-auto">
             {[
               { href: PDF_FILE, Icon: FileText, label: 'Practice Guide', type: 'PDF', name: undefined },
-              { href: IMAGE_FILE, Icon: ImageIcon, label: 'Practice Guide', type: 'Image', name: undefined },
               {
                 href: MEDITATION_FILE,
                 Icon: Headphones,
@@ -99,17 +98,7 @@ const WebinarHandoutPage: React.FC = () => {
             ))}
           </div>
 
-          <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
-            <CardContent className="p-3 md:p-6">
-              <img
-                src={IMAGE_FILE}
-                alt="Attachment Alchemy practice guide: the Wave, Island, Mixed and Anchor attachment patterns, the qualities of the Wise Adult, and the six healing vectors for attachment repair"
-                className="w-full h-auto rounded"
-              />
-            </CardContent>
-          </Card>
-
-          <Card className="bg-white/80 border-none shadow-lg mt-10">
+          <Card className="bg-white/80 border-none shadow-lg mb-10">
             <CardContent className="p-6 md:p-8">
               <Headphones className="h-8 w-8 mx-auto mb-3" style={{ color: TERRACOTTA }} />
               <h2 className="font-serif text-2xl md:text-3xl font-bold mb-2" style={{ color: GREEN }}>
@@ -131,6 +120,16 @@ const WebinarHandoutPage: React.FC = () => {
                 <Download className="h-5 w-5" />
                 Download meditation (MP3)
               </a>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-white/80 border-none shadow-lg overflow-hidden">
+            <CardContent className="p-3 md:p-6">
+              <img
+                src={IMAGE_FILE}
+                alt="Attachment Alchemy practice guide: the Wave, Island, Mixed and Anchor attachment patterns, the qualities of the Wise Adult, and the six healing vectors for attachment repair"
+                className="w-full h-auto rounded"
+              />
             </CardContent>
           </Card>
 
